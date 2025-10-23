@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4575506537622230695}
   - component: {fileID: 7974261078365223623}
   - component: {fileID: 5666290981709546685}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: BookBottomLane
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2554914581336801906}
   - component: {fileID: 8591888681905808906}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ObstacleBottomLane
   m_TagString: Obstacle
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
