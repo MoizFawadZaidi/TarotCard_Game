@@ -29,17 +29,8 @@ public class healthscript : MonoBehaviour
         UpdateUI();
     }
 
-    // Collision-based obstacles (non-trigger)
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        LogColliderInfo("OnCollisionEnter2D", other.collider);
-        if (other.transform.CompareTag("Obstacle")) HandleHit(other.gameObject);
-    }
-
-    // Trigger-based obstacles
     private void OnTriggerEnter2D(Collider2D other)
     {
-        LogColliderInfo("OnTriggerEnter2D", other);
         if (other.CompareTag("Obstacle")) HandleHit(other.gameObject);
     }
 
@@ -70,17 +61,4 @@ public class healthscript : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // --- Diagnostics helper ---
-    private void LogColliderInfo(string hook, Collider2D col)
-    {
-        if (col == null)
-        {
-            Debug.Log($"{hook}: collider is null");
-            return;
-        }
-
-        var go = col.gameObject;
-        var rb = col.attachedRigidbody;
-        Debug.Log($"{hook}: '{go.name}' tag='{go.tag}' active={go.activeInHierarchy} layer={LayerMask.LayerToName(go.layer)} layerIndex={go.layer} enabled={col.enabled} isTrigger={col.isTrigger} colliderType={col.GetType().Name} hasRigidbody={(rb!=null)} rigidbodyType={(rb!=null? rb.bodyType.ToString() : "none")}");
-    }
 }
