@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             currentScore += Time.deltaTime; 
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             isPlaying = true;
         }
