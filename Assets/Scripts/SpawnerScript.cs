@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour
@@ -9,6 +10,13 @@ public class SpawnerScript : MonoBehaviour
     public float obstacleSpeed = 1f;
 
     private float timeUntilObstacleSpawn;
+
+    ObjectPooling objectPool;
+
+    private void Awake()
+    {
+        objectPool = FindAnyObjectByType<ObjectPooling>();
+    }
 
     private void Update()
     {
@@ -32,9 +40,16 @@ public class SpawnerScript : MonoBehaviour
 
     private void Spawn()
     {
-        GameObject obstacleToSpawn = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
+        //GameObject obstacleToSpawn = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
 
-        GameObject spawnedObstacle = Instantiate(obstacleToSpawn, transform.position, Quaternion.identity);  // Obstacle spawns at correct location, trnasform and rotation
+        //GameObject spawnedObstacle = Instantiate(obstacleToSpawn, transform.position, Quaternion.identity);  // Obstacle spawns at correct location, trnasform and rotation
+        GameObject obstacleToSpawn = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
+        GameObject spawnedObstacle = objectPool.ActivateObject(obstacleToSpawn);
+
+        spawnedObstacle.transform.position = transform.position;
+        spawnedObstacle.transform.rotation = Quaternion.identity;
+
+        //spawnedObstacle.SetActive(true);
 
         Rigidbody2D obstacleRB = spawnedObstacle.GetComponent<Rigidbody2D>();
         obstacleRB.linearVelocity = Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.

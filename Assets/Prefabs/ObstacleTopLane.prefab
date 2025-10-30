@@ -158,6 +158,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8701100969536791556}
   - component: {fileID: 477191234432643704}
+  - component: {fileID: 540577372130857989}
+  - component: {fileID: -149622969500677162}
   m_Layer: 7
   m_Name: ObstacleTopLane
   m_TagString: Obstacle
@@ -208,3 +210,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &540577372130857989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090656842912602799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03a880f3dfc929499477119c4bb5cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+--- !u!114 &-149622969500677162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9090656842912602799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55971a477eb52f64f9c9d2b9b383268c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
