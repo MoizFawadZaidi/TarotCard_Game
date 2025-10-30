@@ -12,7 +12,10 @@ public class SpawnerScript : MonoBehaviour
 
     private void Update()
     {
-        SpawnLoop();
+        if (GameManager.instance.isPlaying)
+        {
+            SpawnLoop();
+        }
     }
 
     // Time until the next obstacle spawns 

@@ -22,6 +22,7 @@ public class HealthScript1 : MonoBehaviour
         {
             // player death
             Destroy(gameObject);
+            GameManager.instance.GameOver();
         }
     }
 }
