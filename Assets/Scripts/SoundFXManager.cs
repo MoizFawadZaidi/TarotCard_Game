@@ -1,0 +1,39 @@
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.Rendering;
+
+public class SoundFXManager : MonoBehaviour
+{
+    public static SoundFXManager instance;
+
+    [SerializeField] private AudioSource soundFXObject;
+
+    private void Awake()
+    {
+        if (instance == null )
+        {
+            instance = this;
+        }
+    }
+
+    public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
+    {
+        // spawn gameObject
+        AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
+
+        // assign audioClip
+        audioSource.clip = audioClip;
+
+        // assign volume
+        audioSource.volume = volume;
+
+        // play sound
+        audioSource.Play();
+
+        // get length of SFX clip
+        float clipLength = audioSource.clip.length; 
+
+        // destroy clip after it has played
+        Destroy(audioSource.gameObject, clipLength);
+    }
+}

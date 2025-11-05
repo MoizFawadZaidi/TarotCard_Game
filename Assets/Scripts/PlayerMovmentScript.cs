@@ -9,6 +9,8 @@ public class PlayerMovmentScript : MonoBehaviour
     [SerializeField] private float moveDuration = 1f;
     private Coroutine moveCoroutine;
 
+    [SerializeField] private AudioClip moveSoundClip;
+
     private bool isMoving = false; // Lock inputs whilst moving
 
 
@@ -30,6 +32,7 @@ public class PlayerMovmentScript : MonoBehaviour
     IEnumerator SmoothMove(Vector2 target)
     {
         isMoving = true;
+        SoundFXManager.instance.PlaySoundFXClip(moveSoundClip, transform, 0.1f);
 
         Vector2 start = transform.position;
         float elapsed = 0f;
