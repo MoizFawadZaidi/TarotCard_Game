@@ -1,6 +1,4 @@
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class SoundFXManager : MonoBehaviour
 {
@@ -31,7 +29,7 @@ public class SoundFXManager : MonoBehaviour
         audioSource.Play();
 
         // get length of SFX clip
-        float clipLength = audioSource.clip.length; 
+        float clipLength = audioSource.clip.length;
 
         // destroy clip after it has played
         Destroy(audioSource.gameObject, clipLength);
