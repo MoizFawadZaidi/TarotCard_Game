@@ -11,6 +11,7 @@ public class ObjectPooling : MonoBehaviour
 
     public GameObject topLaneObstacles;
     public GameObject bottomLaneObstacles;
+    public GameObject projectiles;
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class ObjectPooling : MonoBehaviour
     {
         CreatPool(topLaneObstacles, 6);
         CreatPool(bottomLaneObstacles, 6);
+        CreatPool(projectiles, 20);
     }
 
     private void CreatPool(GameObject prefab, int Poolsize)
@@ -60,7 +62,7 @@ public class ObjectPooling : MonoBehaviour
         }
         else
         {
-            //Dynamically expand pool
+            // Dynamically expand pool
             obj = Instantiate(prefab, transform);
             obj.GetComponent<PrefabIdentifier>().SetPrefab(prefab);
         }

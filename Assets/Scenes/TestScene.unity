@@ -1448,6 +1448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topLaneObstacles: {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
   bottomLaneObstacles: {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
+  projectiles: {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
 --- !u!4 &1873624824
 Transform:
   m_ObjectHideFlags: 0
