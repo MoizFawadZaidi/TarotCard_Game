@@ -3,12 +3,14 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour
 {
     [SerializeField] private GameObject[] projectilePrefabs;
+    [SerializeField] private float minFireDelay = 1f;
+    [SerializeField] private float maxFireDelay = 5f;
+    private float nextFireTime;
+    private float timer;
 
     public Transform projectilePos;
-
     ObjectPooling objectPool;
-
-    private float timer;
+    public float projectileSpeed = 1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,10 +24,12 @@ public class EnemyShooting : MonoBehaviour
         if (GameManager.instance.isPlaying)
         {
             timer += Time.deltaTime;
-            if (timer > 2)
+            if (timer >= nextFireTime)
             {
-                timer = 0;
                 shoot();
+
+                timer = 0f;
+                nextFireTime = Random.Range(minFireDelay, maxFireDelay);
             }
         }
     }
@@ -38,5 +42,8 @@ public class EnemyShooting : MonoBehaviour
         //spawnedProjectile.transform.position = transform.position;
         spawnedProjectile.transform.position = projectilePos.position;
         spawnedProjectile.transform.rotation = Quaternion.identity;
+
+        Rigidbody2D obstacleRB = spawnedProjectile.GetComponent<Rigidbody2D>();
+        obstacleRB.linearVelocity = Vector2.left * projectileSpeed;  // projectile moves from right to left.
     }
 }

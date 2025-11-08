@@ -29,7 +29,7 @@ public class ObjectPooling : MonoBehaviour
     {
         CreatPool(topLaneObstacles, 6);
         CreatPool(bottomLaneObstacles, 6);
-        CreatPool(projectiles, 20);
+        CreatPool(projectiles, 10);
     }
 
     private void CreatPool(GameObject prefab, int Poolsize)

@@ -282,4 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefabs:
   - {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
+  minFireDelay: 2
+  maxFireDelay: 4
   projectilePos: {fileID: 8147402921761496172}
+  projectileSpeed: 6

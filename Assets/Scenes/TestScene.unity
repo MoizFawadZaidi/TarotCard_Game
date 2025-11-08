@@ -1166,7 +1166,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 0.6, y: 1.5}
   m_EdgeRadius: 0
 --- !u!50 &811583655
 Rigidbody2D:
@@ -1415,8 +1415,8 @@ MonoBehaviour:
   obstaclePrefabs:
   - {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
   - {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
-  obstacleSpawnTime: 0.5
-  obstacleSpeed: 8
+  obstacleSpawnTime: 2
+  obstacleSpeed: 4
 --- !u!1 &1873624822
 GameObject:
   m_ObjectHideFlags: 0
