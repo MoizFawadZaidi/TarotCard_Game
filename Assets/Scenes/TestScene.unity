@@ -605,6 +605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TarotCard
       objectReference: {fileID: 0}
+    - target: {fileID: 5638638448366668143, guid: af294885ae554f943927056c1d15e373, type: 3}
+      propertyPath: duration
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

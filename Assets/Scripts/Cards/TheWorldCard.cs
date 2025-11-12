@@ -55,6 +55,7 @@ public class TheWorldCard : MonoBehaviour
             }
 
             var projectiles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+
             foreach (var rb in projectiles)
             {
                 if (rb.CompareTag("Projectile"))
