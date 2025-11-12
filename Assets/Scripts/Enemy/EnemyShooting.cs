@@ -10,12 +10,15 @@ public class EnemyShooting : MonoBehaviour
 
     public Transform projectilePos;
     ObjectPooling objectPool;
+    GameStats stats;
     public float projectileSpeed = 1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         objectPool = FindAnyObjectByType<ObjectPooling>();
+        projectileSpeed = GameStats.instance.defaultProjectileSpeed;
+
     }
 
     // Update is called once per frame

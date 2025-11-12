@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
             currentScore += Time.deltaTime; 
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.anyKeyDown)
         {
             isPlaying = true;
         }
@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
         currentScore = 0f;
         isPlaying = false;
     }
-
 
     public string PrettyScore()
     {

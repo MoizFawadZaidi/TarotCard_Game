@@ -8,7 +8,7 @@ public class TheWorldCard : MonoBehaviour
     EnemyShooting enemyShooting;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
         objectSpawner = FindAnyObjectByType<SpawnerScript>();
         enemyShooting = FindAnyObjectByType<EnemyShooting>();
@@ -21,7 +21,24 @@ public class TheWorldCard : MonoBehaviour
         {
             Debug.Log(theWorld.cardName);
             objectSpawner.obstacleSpeed = theWorld.obsatcleSpeed;
-            enemyShooting.projectileSpeed = theWorld.projectileSpeed;
+
+            GameStats.instance.defaultProjectileSpeed = theWorld.projectileSpeed;
+
+            foreach (var shooter in FindObjectsByType<EnemyShooting>(FindObjectsSortMode.None))
+            {
+                shooter.projectileSpeed = theWorld.projectileSpeed;
+            }
+
+            objectSpawner.obstacleSpawnTime = theWorld.obstacleSpawnTime;
+
+            var projectiles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+            foreach (var rb in projectiles)
+            {
+                if (rb.CompareTag("Projectile"))
+                {
+                    rb.linearVelocity = Vector2.left * theWorld.projectileSpeed;
+                }
+            }
         }
     }
 }

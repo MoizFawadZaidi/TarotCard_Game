@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: -5330448769703978722}
   - component: {fileID: -8836974769628402707}
   - component: {fileID: -6759197614508687374}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Projectile
-  m_TagString: Obstacle
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

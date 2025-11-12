@@ -8,6 +8,7 @@ public class Cards : ScriptableObject
 
     public float obsatcleSpeed;
     public float projectileSpeed;
+    public float obstacleSpawnTime;
 
     public float cardTimer;
 }
