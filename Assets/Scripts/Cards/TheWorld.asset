@@ -16,5 +16,7 @@ MonoBehaviour:
   cardSprite: {fileID: -8290856787786529517, guid: 9afc666f9cc0aed42862f45f11a53352, type: 3}
   obsatcleSpeed: 2
   projectileSpeed: 3
-  obstacleSpawnTime: 8
+  minProjectileDelay: 4
+  maxProjectileDelay: 8
+  multiplierOrHalfing: 0
   cardTimer: 10

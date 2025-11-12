@@ -444,12 +444,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228753441}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 552240315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &319467122
 GameObject:
@@ -826,6 +826,7 @@ Transform:
   - {fileID: 2002113373}
   - {fileID: 478123991}
   - {fileID: 1733474268}
+  - {fileID: 228753444}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &581390990
@@ -1553,10 +1554,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ecd89ef7f406242afbb83c5b8f1343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultProjectileSpeed: 1
-  defaultObstacleSpeed: 1
-  globalProjectileSpeed: 4
-  globalObstacleSpeed: 6
+  defaultProjectileSpeed: 6
+  defaultObstacleSpeed: 4
+  slowProjectileSpeed: 0
+  slowObstacleSpeed: 0
 --- !u!1 &1873624822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1795,6 @@ SceneRoots:
   - {fileID: 1897057721}
   - {fileID: 1492852819}
   - {fileID: 6840430}
-  - {fileID: 228753444}
   - {fileID: 319467126}
   - {fileID: 358766485}
   - {fileID: 552240315}

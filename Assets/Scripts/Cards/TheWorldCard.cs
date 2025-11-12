@@ -4,8 +4,10 @@ public class TheWorldCard : MonoBehaviour
 {
 
     public Cards theWorld;
-    SpawnerScript objectSpawner;
-    EnemyShooting enemyShooting;
+    public float duration = 5f;
+
+    private SpawnerScript objectSpawner;
+    private EnemyShooting enemyShooting;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,16 +22,37 @@ public class TheWorldCard : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log(theWorld.cardName);
-            objectSpawner.obstacleSpeed = theWorld.obsatcleSpeed;
 
+            // Increase obstacle spawn time
+            objectSpawner.obstacleSpawnTime = objectSpawner.obstacleSpawnTime * theWorld.multiplierOrHalfing;
+
+            // Increase projectile spawn time
+
+
+            // Obstacle speed decrease
             GameStats.instance.defaultProjectileSpeed = theWorld.projectileSpeed;
 
-            foreach (var shooter in FindObjectsByType<EnemyShooting>(FindObjectsSortMode.None))
+            foreach (var obstacle in FindObjectsByType<SpawnerScript>(FindObjectsSortMode.None))
             {
-                shooter.projectileSpeed = theWorld.projectileSpeed;
+                objectSpawner.obstacleSpeed = objectSpawner.obstacleSpeed / theWorld.multiplierOrHalfing;
             }
 
-            objectSpawner.obstacleSpawnTime = theWorld.obstacleSpawnTime;
+            var obstacles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+            foreach (var rb in obstacles)
+            {
+                if (rb.CompareTag("Obstacle"))
+                {
+                    rb.linearVelocity = Vector2.left * theWorld.obsatcleSpeed;
+                }
+            }
+
+            // Projectile speed decrease
+            GameStats.instance.defaultProjectileSpeed = theWorld.projectileSpeed;
+
+            foreach (var projectile in FindObjectsByType<EnemyShooting>(FindObjectsSortMode.None))
+            {
+                projectile.projectileSpeed = projectile.projectileSpeed/theWorld.multiplierOrHalfing;
+            }
 
             var projectiles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
             foreach (var rb in projectiles)
