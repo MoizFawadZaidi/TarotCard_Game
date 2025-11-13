@@ -51,11 +51,5 @@ public class SpawnerScript : MonoBehaviour
 
         Rigidbody2D obstacleRB = spawnedObstacle.GetComponent<Rigidbody2D>();
         obstacleRB.linearVelocity = Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.
-
-        EnemyShooting shooter = spawnedObstacle.GetComponent<EnemyShooting>();
-        if (shooter != null)
-        {
-            shooter.projectileSpeed = GameStats.instance.defaultProjectileSpeed;
-        }
     }
 }
