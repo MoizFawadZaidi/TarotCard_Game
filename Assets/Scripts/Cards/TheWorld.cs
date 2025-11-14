@@ -75,7 +75,7 @@ public class TheWorld : MonoBehaviour
         // Slow motion effect ends
         yield return new WaitForSeconds (effectDuration);
         Debug.Log("Effect ended!");
-        isActivated = false;
+        //isActivated = false;
 
         //if (isActivated == false)
         //{
