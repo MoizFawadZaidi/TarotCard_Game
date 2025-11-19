@@ -31,7 +31,8 @@ public class SpawnerScript : MonoBehaviour
     {
         timeUntilObstacleSpawn += Time.deltaTime;
 
-        if (timeUntilObstacleSpawn >= obstacleSpawnTime) //If the TimeUntilObstacleSpawn has reached the obstacleSpawnTime value then: spawn an obstacle and set timeUntilObstacleSpawn to 0.
+        // If the TimeUntilObstacleSpawn has reached the obstacleSpawnTime value then: spawn an obstacle and set timeUntilObstacleSpawn to 0.
+        if (timeUntilObstacleSpawn >= obstacleSpawnTime) 
         {
             Spawn();
             timeUntilObstacleSpawn = 0f;
@@ -49,7 +50,7 @@ public class SpawnerScript : MonoBehaviour
         spawnedObstacle.transform.rotation = Quaternion.identity;
 
 
-        Rigidbody2D obstacleRB = spawnedObstacle.GetComponent<Rigidbody2D>();
-        obstacleRB.linearVelocity = Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.
+        Rigidbody2D obstacleRb = spawnedObstacle.GetComponent<Rigidbody2D>();
+        obstacleRb.linearVelocity = Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.
     }
 }

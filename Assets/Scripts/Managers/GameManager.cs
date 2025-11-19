@@ -22,12 +22,17 @@ public class GameManager : MonoBehaviour
     {
         if (isPlaying)
         {
-            currentScore += Time.deltaTime; 
+            currentScore += Time.deltaTime;
         }
 
         if (Input.anyKeyDown)
         {
             isPlaying = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            currentScore += 5;
         }
     }
 

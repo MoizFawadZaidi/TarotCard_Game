@@ -14,7 +14,7 @@ public class ObstacleDestroyerScript : MonoBehaviour
         if  (collision.CompareTag("Wall"))
         {
             objectPooling.RemoveObject(gameObject);
-            Debug.Log("Object destroyed");
+            //Debug.Log("Object destroyed");
         }
     }
 }
