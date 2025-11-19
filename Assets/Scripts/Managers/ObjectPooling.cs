@@ -10,6 +10,7 @@ public class ObjectPooling : MonoBehaviour
     private Dictionary<GameObject, Queue<GameObject>> pools = new Dictionary<GameObject, Queue<GameObject>>();
 
     public GameObject topLaneObstacles;
+    public GameObject middleLaneObstacles;
     public GameObject bottomLaneObstacles;
     public GameObject projectiles;
 
@@ -27,12 +28,13 @@ public class ObjectPooling : MonoBehaviour
 
     private void Start()
     {
-        CreatPool(topLaneObstacles, 6);
-        CreatPool(bottomLaneObstacles, 6);
-        CreatPool(projectiles, 10);
+        CreatePool(topLaneObstacles, 6);
+        CreatePool(bottomLaneObstacles, 6);
+        CreatePool(middleLaneObstacles, 6);
+        CreatePool(projectiles, 10);
     }
 
-    private void CreatPool(GameObject prefab, int Poolsize)
+    private void CreatePool(GameObject prefab, int Poolsize)
     {
         Queue<GameObject> newPool = new Queue<GameObject>();
         for (int i = 0; i < Poolsize; i++)

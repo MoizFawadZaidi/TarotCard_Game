@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5666290981709546685}
   - component: {fileID: 1885325621486739170}
   m_Layer: 7
-  m_Name: Dog
+  m_Name: Book
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 453537326601671458}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6110406952511323569, guid: e2b6ba3ee575b7747bfeb3a08e0b5977, type: 3}
+  m_Sprite: {fileID: 7002752204665289234, guid: 1acc1307bbf8ab3418bc22ffeac5384f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +128,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9375, y: 1}
+    oldSize: {x: 0.9375, y: 0.6875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 7072588197294064035}
   - component: {fileID: -998021866476740162}
   m_Layer: 7
-  m_Name: ObstacleBottomLane
+  m_Name: ObstacleMiddleLane
   m_TagString: Obstacle
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

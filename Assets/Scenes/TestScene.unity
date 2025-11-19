@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 6840427}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12, y: 0, z: 0}
+  m_LocalPosition: {x: -6.52, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1414,6 +1414,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
+  - {fileID: 7556315812392773076, guid: 760d9b50eea41da429c20d79d3b574f2, type: 3}
   - {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
   obstacleSpawnTime: 2
   obstacleSpeed: 4
@@ -1495,6 +1496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   topLaneObstacles: {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
+  middleLaneObstacles: {fileID: 7556315812392773076, guid: 760d9b50eea41da429c20d79d3b574f2, type: 3}
   bottomLaneObstacles: {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
   projectiles: {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
 --- !u!4 &1873624824

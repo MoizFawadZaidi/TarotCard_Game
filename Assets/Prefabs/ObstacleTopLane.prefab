@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1288269972513991690}
   - component: {fileID: 7826041596588649715}
   m_Layer: 7
-  m_Name: BookTopLane
+  m_Name: Thingy
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,4 +285,4 @@ MonoBehaviour:
   minFireDelay: 2
   maxFireDelay: 4
   projectilePos: {fileID: 8147402921761496172}
-  projectileSpeed: 6
+  projectileSpeed: 8

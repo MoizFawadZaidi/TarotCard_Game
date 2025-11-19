@@ -9,12 +9,12 @@ public class ObstacleDestroyerScript : MonoBehaviour
     }
 
     ObjectPooling objectPooling;
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D (Collider2D collision)
     {
-        if (other.transform.tag == "Wall")
+        if  (collision.CompareTag("Wall"))
         {
             objectPooling.RemoveObject(gameObject);
-            //Debug.Log("Object destroyed");
+            Debug.Log("Object destroyed");
         }
     }
 }
