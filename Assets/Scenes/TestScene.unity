@@ -1626,53 +1626,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1113292167304146561, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191729766778504056, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191729766778504056, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Constraints
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191729766778504056, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191729766778504056, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_AngularDamping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2191729766778504056, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3530773356584080525, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698753127084456914, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4217662664633641590, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_LocalPosition.x

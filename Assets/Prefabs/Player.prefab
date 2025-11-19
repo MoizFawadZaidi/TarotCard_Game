@@ -122,7 +122,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -130,13 +130,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.0625, y: 1}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6, y: 1.5}
+  m_Size: {x: 0.75, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &2191729766778504056
 Rigidbody2D:
@@ -146,13 +146,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3530773356584080525}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -161,10 +161,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_CollisionDetection: 1
+  m_Constraints: 5
 --- !u!114 &1113292167304146561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,10 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9920f3ebbac0fee489c27bc10c6eb051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topLane: {x: -5, y: 1.5}
-  bottomLane: {x: -5, y: -3}
-  moveDuration: 0.35
-  moveSoundClip: {fileID: 8300000, guid: 9d1a647ea1db5b44893e9d5465942b8e, type: 3}
+  moveSpeed: 5
 --- !u!114 &2988096604161702930
 MonoBehaviour:
   m_ObjectHideFlags: 0
