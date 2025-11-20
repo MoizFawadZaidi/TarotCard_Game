@@ -1,23 +1,26 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class DeathScreenUI : MonoBehaviour
+public class DeathSceneUI : MonoBehaviour
 {
-    // Hook these up in Inspector if you want (not required)
-    // public GameObject deathScreen;
+    public Text finalScoreText;
 
-    // Called by the Restart button
-    public void Restart()
+    void Start()
     {
-        Time.timeScale = 1f; // resume time in case it was paused
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Display the score that was stored before death
+        finalScoreText.text = "Score: " + PlayerPrefs.GetInt("PrettyScore", 0);
     }
 
-    // Called by the Quit button
+    public void Restart()
+    {
+        
+        SceneManager.LoadScene("TestScene");
+    }
+
     public void Quit()
     {
 #if UNITY_EDITOR
-        // Stop play mode in the editor
         UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();

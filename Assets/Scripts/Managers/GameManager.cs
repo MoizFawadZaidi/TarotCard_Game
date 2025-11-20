@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         isPlaying = false;
     }
 
+
     public string PrettyScore()
     {
         return Mathf.RoundToInt(currentScore).ToString();

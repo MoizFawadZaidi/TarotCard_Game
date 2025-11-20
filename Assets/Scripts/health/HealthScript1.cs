@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthScript1 : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class HealthScript1 : MonoBehaviour
 
     [SerializeField] private AudioClip damageSoundClip;
 
-    public GameObject deathScreen;
+    
  
 
     private void Awake()
@@ -15,9 +16,7 @@ public class HealthScript1 : MonoBehaviour
         currentHealth = maxHealth;
 
  
-        if (deathScreen != null)
-            deathScreen.SetActive(false);
-        // -------------------------
+
     }
 
     public void TakeDamage(float damage)
@@ -36,9 +35,9 @@ public class HealthScript1 : MonoBehaviour
             GameManager.instance.GameOver();
 
 
-            // Show death UI
-            if (deathScreen != null)
-                deathScreen.SetActive(true);
+            // Load the Death Scene (name must match your scene)
+            SceneManager.LoadScene("DeathScene");
+
 
 
         }
