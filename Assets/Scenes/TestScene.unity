@@ -1567,6 +1567,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3530773356584080525, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_Name
       value: Player
