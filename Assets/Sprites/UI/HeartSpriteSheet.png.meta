@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 8b2268a3208d6ce4da894c60693ecdd8
+guid: 8a606228c589eb64481ed58cb8cbcd03
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8554716078084776712
-    second: Batble2_0
+      213: 6579227091846251853
+    second: HeartSpriteSheet_0
+  - first:
+      213: -6302670994431313377
+    second: HeartSpriteSheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -139,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Batble2_0
+      name: HeartSpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 14
+        y: 11
+        width: 98
+        height: 99
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,52 +157,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 803e09cb2f478b670800000000000000
-      internalID: 8554716078084776712
+      spriteID: d454f1a8e2c1e4b50800000000000000
+      internalID: 6579227091846251853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Batble2_1
+      name: HeartSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 146
+        y: 13
+        width: 92
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f5b51e368843be14fbee4b43eb0e86d9
-      internalID: 989582366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Batble2_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d02143a3b5cc6d43a90a344df6d8205
-      internalID: -791465898
+      spriteID: f1a73c0af1a6888a0800000000000000
+      internalID: -6302670994431313377
       vertices: []
       indices: 
       edges: []
@@ -208,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bf0290b685e778840bda57b899aca1c5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -218,9 +199,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Batble2_0: 8554716078084776712
-      Batble2_1: 989582366
-      Batble2_2: -791465898
+      HeartSpriteSheet_0: 6579227091846251853
+      HeartSpriteSheet_1: -6302670994431313377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

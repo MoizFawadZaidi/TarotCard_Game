@@ -154,9 +154,9 @@ TextureImporter:
       name: FANGTOM2_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -176,9 +176,9 @@ TextureImporter:
       name: FANGTOM2_1
       rect:
         serializedVersion: 2
-        x: 17
+        x: 16
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -198,9 +198,9 @@ TextureImporter:
       name: FANGTOM2_2
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -220,9 +220,9 @@ TextureImporter:
       name: FANGTOM2_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -242,9 +242,9 @@ TextureImporter:
       name: FANGTOM2_4
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -264,7 +264,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c8c3e4b75b3642f459dfe4eeee1d9c1d
     internalID: 0
     vertices: []
     indices: 

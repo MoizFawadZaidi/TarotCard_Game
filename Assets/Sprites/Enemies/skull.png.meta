@@ -147,7 +147,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 8
+        width: 16
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,33 +163,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: skull_1
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 0
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a09d820cc931ceb80800000000000000
-      internalID: -8364288843974125302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f8493b8013bc01641a6d2d41ba1eb7c5
     internalID: 0
     vertices: []
     indices: 
@@ -200,7 +178,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       skull_0: -3560852360957142242
-      skull_1: -8364288843974125302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

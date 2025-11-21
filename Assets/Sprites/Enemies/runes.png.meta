@@ -153,7 +153,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7
+        width: 16
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,9 +173,9 @@ TextureImporter:
       name: runes_1
       rect:
         serializedVersion: 2
-        x: 8
+        x: 16
         y: 0
-        width: 7
+        width: 16
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -191,55 +191,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: runes_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c688f20e071c2ae0800000000000000
-      internalID: -1572856820912322875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: runes_3
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b78856c14f78288f0800000000000000
-      internalID: -539719522812852101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 063fd12d9d342ff4bad06524f9b607d0
     internalID: 0
     vertices: []
     indices: 
@@ -251,8 +207,6 @@ TextureImporter:
     nameFileIdTable:
       runes_0: 2807548766200926727
       runes_1: -1667735088815940429
-      runes_2: -1572856820912322875
-      runes_3: -539719522812852101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

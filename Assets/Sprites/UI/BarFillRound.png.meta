@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b2268a3208d6ce4da894c60693ecdd8
+guid: 7eba686b508aca84e8061fa37857a935
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8554716078084776712
-    second: Batble2_0
+      213: 7886166610135620446
+    second: BarFillRound_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Batble2_0
+      name: BarFillRound_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 9
+        y: 60
+        width: 110
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,52 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 803e09cb2f478b670800000000000000
-      internalID: 8554716078084776712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Batble2_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5b51e368843be14fbee4b43eb0e86d9
-      internalID: 989582366
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Batble2_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d02143a3b5cc6d43a90a344df6d8205
-      internalID: -791465898
+      spriteID: e5b1eaccfba417d60800000000000000
+      internalID: 7886166610135620446
       vertices: []
       indices: 
       edges: []
@@ -208,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bf0290b685e778840bda57b899aca1c5
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -218,9 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Batble2_0: 8554716078084776712
-      Batble2_1: 989582366
-      Batble2_2: -791465898
+      BarFillRound_0: 7886166610135620446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

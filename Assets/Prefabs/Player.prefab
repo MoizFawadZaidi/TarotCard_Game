@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2191729766778504056}
   - component: {fileID: 1113292167304146561}
   - component: {fileID: 2988096604161702930}
+  - component: {fileID: 2298232563490717029}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -191,3 +192,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   damageSoundClip: {fileID: 8300000, guid: 377398326c147964393fff924f4230d5, type: 3}
+--- !u!95 &2298232563490717029
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3530773356584080525}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc070cb05f203a947a34a158ce3f6d88, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

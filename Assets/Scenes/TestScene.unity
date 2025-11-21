@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000ab075829d799412bbd09fd1a6158c632
+  m_ApplyToSortingLayers: 00000000ab075829d799412bbd09fd1a6158c63285d8c5f7
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1579,10 +1579,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1b9dc58c8b343904fb27ff24f448246d, type: 2}
     - target: {fileID: 4217662664633641590, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4

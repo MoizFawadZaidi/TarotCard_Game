@@ -154,10 +154,10 @@ TextureImporter:
       name: Bookrok Movement_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
-        width: 15
-        height: 11
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,9 +176,9 @@ TextureImporter:
       name: Bookrok Movement_1
       rect:
         serializedVersion: 2
-        x: 18
+        x: 16
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -198,9 +198,9 @@ TextureImporter:
       name: Bookrok Movement_2
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,7 +223,7 @@ TextureImporter:
         x: 48
         y: 0
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,9 +243,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 5
+        y: 0
         width: 16
-        height: 9
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,7 +264,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b12cbde3b8ba707439c09429e0556319
     internalID: 0
     vertices: []
     indices: 
