@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a0f4f8b41f6c9e74da71dd399206b170
+guid: 89ac2161a6104fa4e89217a3129980e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6208176927266180224
-    second: Play_0
+      213: 809936825828705350
+    second: TarotLogo_0
+  - first:
+      213: -5060135351359198052
+    second: TarotLogo_1
+  - first:
+      213: -5822914591254153417
+    second: TarotLogo_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -135,17 +141,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Play_0
+      name: TarotLogo_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 8
-        height: 12
+        x: 23
+        y: 13
+        width: 76
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +173,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08c0a74e500e72650800000000000000
-      internalID: 6208176927266180224
+      spriteID: 644070a70497d3b00800000000000000
+      internalID: 809936825828705350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TarotLogo_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 43
+        width: 65
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ca6da25b9c6c9b0800000000000000
+      internalID: -5060135351359198052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TarotLogo_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 28
+        width: 49
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7377bd6c70ad03fa0800000000000000
+      internalID: -5822914591254153417
       vertices: []
       indices: 
       edges: []
@@ -173,7 +236,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TarotLogo_0: 809936825828705350
+      TarotLogo_1: -5060135351359198052
+      TarotLogo_2: -5822914591254153417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
