@@ -1416,8 +1416,8 @@ MonoBehaviour:
   - {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
   - {fileID: 7556315812392773076, guid: 760d9b50eea41da429c20d79d3b574f2, type: 3}
   - {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
-  obstacleSpawnTime: 2
-  obstacleSpeed: 4
+  obstacleSpawnTime: 0.5
+  obstacleSpeed: 5
 --- !u!1 &1733474267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1498,10 @@ MonoBehaviour:
   topLaneObstacles: {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
   middleLaneObstacles: {fileID: 7556315812392773076, guid: 760d9b50eea41da429c20d79d3b574f2, type: 3}
   bottomLaneObstacles: {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
-  projectiles: {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
+  projectilePrefabs:
+  - {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
+  - {fileID: 3566267588367233244, guid: 9b0a8283667837a4a89e87724a70fe6d, type: 3}
+  - {fileID: 3566267588367233244, guid: 35e5901093ef29e42b2f205b402f66a9, type: 3}
 --- !u!4 &1873624824
 Transform:
   m_ObjectHideFlags: 0
@@ -1578,6 +1581,22 @@ PrefabInstance:
     - target: {fileID: 3530773356584080525, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984862475572766218, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4217662664633641590, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_LocalPosition.x

@@ -308,4 +308,4 @@ MonoBehaviour:
   minFireDelay: 2
   maxFireDelay: 4
   projectilePos: {fileID: 2347670513970411380}
-  projectileSpeed: 8
+  projectileSpeed: 12

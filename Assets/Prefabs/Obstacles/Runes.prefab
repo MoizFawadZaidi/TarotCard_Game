@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 9071898399163285145}
   - component: {fileID: 3370904531790730779}
   - component: {fileID: -8469926327922621247}
-  - component: {fileID: 4886537847611340396}
+  - component: {fileID: -3673805063954892210}
   - component: {fileID: -5330448769703978722}
   - component: {fileID: -8836974769628402707}
   - component: {fileID: -6759197614508687374}
+  - component: {fileID: 2398213168148643889}
   m_Layer: 8
-  m_Name: Projectile
+  m_Name: Runes
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,8 +82,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7758239863821844391, guid: 93f0ee1192601054786b8ad9bcb8da19, type: 3}
-  m_Color: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
+  m_Sprite: {fileID: 2807548766200926727, guid: 7c194ddff8870b447b24efbd81c058c5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -119,8 +120,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &4886537847611340396
-CircleCollider2D:
+--- !u!61 &-3673805063954892210
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -154,7 +155,17 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.2
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!114 &-5330448769703978722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,3 +204,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55971a477eb52f64f9c9d2b9b383268c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2398213168148643889
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566267588367233244}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 200a9ed7df7baee4591cac4783be7cf7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

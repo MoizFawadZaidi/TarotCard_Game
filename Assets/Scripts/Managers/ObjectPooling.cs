@@ -12,8 +12,9 @@ public class ObjectPooling : MonoBehaviour
     public GameObject topLaneObstacles;
     public GameObject middleLaneObstacles;
     public GameObject bottomLaneObstacles;
-    public GameObject projectiles;
+    [SerializeField] private GameObject[] projectilePrefabs;
 
+    
     private void Awake()
     {
         if (instance == null)
@@ -31,7 +32,12 @@ public class ObjectPooling : MonoBehaviour
         CreatePool(topLaneObstacles, 6);
         CreatePool(bottomLaneObstacles, 6);
         CreatePool(middleLaneObstacles, 6);
-        CreatePool(projectiles, 10);
+        
+        foreach (GameObject prefab in projectilePrefabs)
+        {
+            CreatePool(prefab, 10);
+        }
+        
     }
 
     private void CreatePool(GameObject prefab, int Poolsize)
@@ -51,7 +57,7 @@ public class ObjectPooling : MonoBehaviour
     {
         if (!pools.ContainsKey(prefab))
         {
-            Debug.LogWarning($"No pools dound for{prefab.name}");
+            Debug.LogWarning($"No pools found for{prefab.name}");
             return null;
         }
 
