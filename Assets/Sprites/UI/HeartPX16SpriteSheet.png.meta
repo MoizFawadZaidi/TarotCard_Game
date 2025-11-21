@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 8a606228c589eb64481ed58cb8cbcd03
+guid: d88663189656f944883171561d2227d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6579227091846251853
-    second: HeartSpriteSheet_0
+      213: 59345460018721570
+    second: HeartPX16SpriteSheet_0
   - first:
-      213: -6302670994431313377
-    second: HeartSpriteSheet_1
+      213: 1307005271892801112
+    second: HeartPX16SpriteSheet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -142,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HeartSpriteSheet_0
+      name: HeartPX16SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 11
-        width: 98
-        height: 99
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d454f1a8e2c1e4b50800000000000000
-      internalID: 6579227091846251853
+      spriteID: 223b277a166d2d000800000000000000
+      internalID: 59345460018721570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HeartSpriteSheet_1
+      name: HeartPX16SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 146
-        y: 13
-        width: 92
-        height: 94
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1a73c0af1a6888a0800000000000000
-      internalID: -6302670994431313377
+      spriteID: 856bbb6be5a632210800000000000000
+      internalID: 1307005271892801112
       vertices: []
       indices: 
       edges: []
@@ -189,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8bc42a0b0a7d5024eb4de734ccad373e
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +199,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HeartSpriteSheet_0: 6579227091846251853
-      HeartSpriteSheet_1: -6302670994431313377
+      HeartPX16SpriteSheet_0: 59345460018721570
+      HeartPX16SpriteSheet_1: 1307005271892801112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

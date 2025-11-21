@@ -1,10 +1,34 @@
 fileFormatVersion: 2
-guid: e8cae48894615544b84710a3c63416bb
+guid: 5b6ac671af325134a9d6744637db01fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7471475682696426056
-    second: BarEmpty_0
+      213: 4622095111098495065
+    second: FullHeart_SpriteSheet_0
+  - first:
+      213: -4280654598599608131
+    second: FullHeart_SpriteSheet_1
+  - first:
+      213: 3733700632023094748
+    second: FullHeart_SpriteSheet_2
+  - first:
+      213: 858134880770405472
+    second: FullHeart_SpriteSheet_3
+  - first:
+      213: -5718937367077132053
+    second: FullHeart_SpriteSheet_4
+  - first:
+      213: 6839177469942973329
+    second: FullHeart_SpriteSheet_5
+  - first:
+      213: 4670413847928140855
+    second: FullHeart_SpriteSheet_6
+  - first:
+      213: -8117661448123760660
+    second: FullHeart_SpriteSheet_7
+  - first:
+      213: -5701606939820844141
+    second: FullHeart_SpriteSheet_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,23 +163,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarEmpty_0
+      name: FullHeart_SpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 58
-        width: 114
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 48
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 842f61f3c8300b760800000000000000
-      internalID: 7471475682696426056
+      spriteID: 950781fb30bf42040800000000000000
+      internalID: 4622095111098495065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullHeart_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8f35c825f0894c0800000000000000
+      internalID: -4280654598599608131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FullHeart_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 16
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5536d51f4c0d330800000000000000
+      internalID: 3733700632023094748
       vertices: []
       indices: 
       edges: []
@@ -164,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 52f402af85ca74e478ffe0b9e5411d6d
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +242,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BarEmpty_0: 7471475682696426056
+      FullHeart_SpriteSheet_0: 4622095111098495065
+      FullHeart_SpriteSheet_1: -4280654598599608131
+      FullHeart_SpriteSheet_2: 3733700632023094748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
