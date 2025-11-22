@@ -17,7 +17,7 @@ public class EnemyShooting : MonoBehaviour
     void Start()
     {
         objectPool = FindAnyObjectByType<ObjectPooling>();
-        projectileSpeed = GameStats.instance.defaultProjectileSpeed;
+        //projectileSpeed = GameStats.instance.defaultProjectileSpeed;
 
     }
 
