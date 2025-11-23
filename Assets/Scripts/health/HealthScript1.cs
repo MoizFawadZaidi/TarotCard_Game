@@ -34,6 +34,8 @@ public class HealthScript1 : MonoBehaviour
             Destroy(gameObject);
             GameManager.instance.GameOver();
 
+            PlayerPrefs.SetFloat("LastScoreFloat", GameManager.instance.currentScore);
+            PlayerPrefs.Save();
 
             // Load the Death Scene (name must match your scene)
             SceneManager.LoadScene("DeathScene");
