@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        currentScore = 0f;
+        
         isPlaying = false;
     }
 
