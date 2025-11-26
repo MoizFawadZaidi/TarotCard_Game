@@ -22,7 +22,7 @@ public class DeathSceneUI : MonoBehaviour
     public void Restart()
     {
         
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void Quit()
