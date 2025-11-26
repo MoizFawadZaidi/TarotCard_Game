@@ -16,7 +16,7 @@ public class DeathSceneUI : MonoBehaviour
 
         
         int display = Mathf.RoundToInt(saved);
-        finalScoreText.text = ": " + display.ToString();
+        finalScoreText.text = "POINTS: " + display.ToString();
     }
 
     public void Restart()

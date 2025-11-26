@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -6759197614508687374}
   - component: {fileID: 2398213168148643889}
   m_Layer: 8
-  m_Name: Skulls
+  m_Name: Fireballs
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3560852360957142242, guid: e909a0fabea34d944bcc772a0c81d223, type: 3}
+  m_Sprite: {fileID: 2687695977730182437, guid: 6ca5b09ce9cc3bb41b55b7fe7c896026, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -204,7 +204,7 @@ Animator:
   m_GameObject: {fileID: 3566267588367233244}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c63568b8561b2c64ba77212c24c8aaae, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0dd6bd7998780674e9bd247098bf6f08, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

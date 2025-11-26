@@ -30,10 +30,10 @@ public class GameManager : MonoBehaviour
             isPlaying = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            currentScore += 5;
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     currentScore += 5;
+        // }
     }
 
     public void GameOver()
