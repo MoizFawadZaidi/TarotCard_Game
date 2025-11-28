@@ -44,20 +44,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Bookshelf
+    uniqueID: 3555633779
+    locked: 0
+  - name: Doors
     uniqueID: 725719511
     locked: 0
-  - name: Foreground
+  - name: Pillars
     uniqueID: 452790717
-    locked: 0
-  - name: Ground
-    uniqueID: 851859553
     locked: 0
   - name: Player
     uniqueID: 693634987
     locked: 0
   - name: Enemy
     uniqueID: 2376708139
+    locked: 0
+  - name: Projectiles
+    uniqueID: 851859553
+    locked: 0
+  - name: Foreground
+    uniqueID: 3144019645
     locked: 0
   m_RenderingLayers:
   - Default

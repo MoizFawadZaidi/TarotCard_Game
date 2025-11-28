@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 53ff6a5a4f8df694a818c97c814f1194
+guid: 5dc192d675d569247900aa3d0e42a422
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7443756053782179069
-    second: background_0
+      213: 7714273618057256637
+    second: new merged forground_0
+  - first:
+      213: -1855405183597468563
+    second: new merged forground_1
+  - first:
+      213: -7037482576953069988
+    second: new merged forground_2
+  - first:
+      213: -1812263840706321853
+    second: new merged forground_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,12 +135,56 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_0
+      name: new merged forground_0
       rect:
         serializedVersion: 2
         x: 0
+        y: 67
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe5870dbfa9e0b60800000000000000
+      internalID: 7714273618057256637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new merged forground_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 79
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64214dd0d64046e0800000000000000
+      internalID: -1855405183597468563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new merged forground_2
+      rect:
+        serializedVersion: 2
+        x: 105
         y: 0
-        width: 160
+        width: 55
         height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +194,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30356abce4772b890800000000000000
-      internalID: -7443756053782179069
+      spriteID: c5e26b7e1e6d55e90800000000000000
+      internalID: -7037482576953069988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: new merged forground_3
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3422a6f73ab89d6e0800000000000000
+      internalID: -1812263840706321853
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_0: -7443756053782179069
+      new merged forground_0: 7714273618057256637
+      new merged forground_1: -1855405183597468563
+      new merged forground_2: -7037482576953069988
+      new merged forground_3: -1812263840706321853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
