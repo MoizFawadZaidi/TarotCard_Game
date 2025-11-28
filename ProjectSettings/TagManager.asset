@@ -47,6 +47,9 @@ TagManager:
   - name: Bookshelf
     uniqueID: 3555633779
     locked: 0
+  - name: Cauldron
+    uniqueID: 24542757
+    locked: 0
   - name: Doors
     uniqueID: 725719511
     locked: 0
