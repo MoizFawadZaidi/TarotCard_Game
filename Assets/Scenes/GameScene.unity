@@ -238,6 +238,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &17507736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17507737}
+  m_Layer: 0
+  m_Name: MIDDLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17507737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17507736}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214699338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,6 +1562,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7285097a35b8c4f8fe7009e48f9af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &921019899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 921019900}
+  m_Layer: 0
+  m_Name: TOP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &921019900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921019899}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7, y: 1.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074907914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,6 +1856,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+--- !u!1 &1243449086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243449087}
+  m_Layer: 0
+  m_Name: BOTTOM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243449087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243449086}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7, y: -1.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1278373855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,6 +2231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a2bab548c136a4c94317b62fdf0fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lanes:
+  - {fileID: 921019900}
+  - {fileID: 17507737}
+  - {fileID: 1243449087}
   obstaclePrefabs:
   - {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
   - {fileID: 7556315812392773076, guid: 760d9b50eea41da429c20d79d3b574f2, type: 3}
@@ -2145,7 +2242,7 @@ MonoBehaviour:
   obstacleSpawnTime: 0.65
   obstacleSpeed: 5
   cardPrefabs:
-  - {fileID: 4789922897781791339, guid: 52a317c0c7dbd5549bfc84e9d05e2524, type: 3}
+  - {fileID: 9092489592986245630, guid: 0d489721317ce0742ac3dc5a31ea6105, type: 3}
   cardSpawnTime: 2
   cardSpeed: 1
 --- !u!1 &1733474267
@@ -2228,7 +2325,7 @@ MonoBehaviour:
   topLaneObstacles: {fileID: 9090656842912602799, guid: b24942c8e2b2c654ba1febf76cecd4a3, type: 3}
   middleLaneObstacles: {fileID: 7556315812392773076, guid: 760d9b50eea41da429c20d79d3b574f2, type: 3}
   bottomLaneObstacles: {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
-  pointIncrease: {fileID: 4789922897781791339, guid: 52a317c0c7dbd5549bfc84e9d05e2524, type: 3}
+  pointIncrease: {fileID: 9092489592986245630, guid: 0d489721317ce0742ac3dc5a31ea6105, type: 3}
   projectilePrefabs:
   - {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
   - {fileID: 3566267588367233244, guid: 9b0a8283667837a4a89e87724a70fe6d, type: 3}
@@ -2486,3 +2583,6 @@ SceneRoots:
   - {fileID: 523248596}
   - {fileID: 229933941}
   - {fileID: 747579273}
+  - {fileID: 921019900}
+  - {fileID: 17507737}
+  - {fileID: 1243449087}

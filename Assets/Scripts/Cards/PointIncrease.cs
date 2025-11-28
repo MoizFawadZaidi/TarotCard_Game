@@ -23,6 +23,7 @@ public class PointIncrease : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameManager.currentScore += 5;
+            gameObject.SetActive(false);
         }
     }
 }

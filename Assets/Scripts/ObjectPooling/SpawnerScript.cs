@@ -6,8 +6,7 @@ using UnityEngine.UIElements;
 
 public class SpawnerScript : MonoBehaviour
 {
-    [SerializeField] private Transform lanes;
-    lanes 
+    [SerializeField] private Transform[] lanes;
     
     [SerializeField] private GameObject[] obstaclePrefabs;
     public float obstacleSpawnTime = 2f;
@@ -18,9 +17,6 @@ public class SpawnerScript : MonoBehaviour
     public float cardSpawnTime = 2f;
     public float cardSpeed = 1f;
     private float timeUntilCardSpawn;
-    
-    public float lowSpawn = -2f;
-    public float highSpawn = 1f;
     
     ObjectPooling objectPool;
 
@@ -77,7 +73,9 @@ public class SpawnerScript : MonoBehaviour
         GameObject cardToSpawn = cardPrefabs[Random.Range(0, cardPrefabs.Length)];
         GameObject spawnedCard = objectPool.ActivateObject(cardToSpawn);
         
-        spawnedCard.transform.position = transform.position;
+        Transform lane = lanes[Random.Range(0, lanes.Length)];
+        
+        spawnedCard.transform.position = lane.position;
         spawnedCard.transform.rotation = Quaternion.identity;
         
         Rigidbody2D cardRb = spawnedCard.GetComponent<Rigidbody2D>();
