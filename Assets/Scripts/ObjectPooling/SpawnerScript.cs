@@ -2,15 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SpawnerScript : MonoBehaviour
 {
+    [SerializeField] private Transform lanes;
+    lanes 
+    
     [SerializeField] private GameObject[] obstaclePrefabs;
     public float obstacleSpawnTime = 2f;
     public float obstacleSpeed = 1f;
-
     private float timeUntilObstacleSpawn;
-
+    
+    [SerializeField] private GameObject[] cardPrefabs;
+    public float cardSpawnTime = 2f;
+    public float cardSpeed = 1f;
+    private float timeUntilCardSpawn;
+    
+    public float lowSpawn = -2f;
+    public float highSpawn = 1f;
+    
     ObjectPooling objectPool;
 
     private void Awake()
@@ -30,16 +41,23 @@ public class SpawnerScript : MonoBehaviour
     private void SpawnLoop()
     {
         timeUntilObstacleSpawn += Time.deltaTime;
+        timeUntilCardSpawn += Time.deltaTime;
 
         // If the TimeUntilObstacleSpawn has reached the obstacleSpawnTime value then: spawn an obstacle and set timeUntilObstacleSpawn to 0.
         if (timeUntilObstacleSpawn >= obstacleSpawnTime) 
         {
-            Spawn();
+            SpawnObstacle();
             timeUntilObstacleSpawn = 0f;
+        }
+
+        if (timeUntilCardSpawn >= cardSpawnTime)
+        {
+            SpawnCard();
+            timeUntilCardSpawn = 0f;
         }
     }
 
-    private void Spawn()
+    private void SpawnObstacle()
     {
 
         // Obstacle spawns at correct location, transform and rotation
@@ -49,8 +67,21 @@ public class SpawnerScript : MonoBehaviour
         spawnedObstacle.transform.position = transform.position;
         spawnedObstacle.transform.rotation = Quaternion.identity;
 
-
         Rigidbody2D obstacleRb = spawnedObstacle.GetComponent<Rigidbody2D>();
         obstacleRb.linearVelocity = Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.
     }
+
+    private void SpawnCard()
+    {
+        // Cards spawning
+        GameObject cardToSpawn = cardPrefabs[Random.Range(0, cardPrefabs.Length)];
+        GameObject spawnedCard = objectPool.ActivateObject(cardToSpawn);
+        
+        spawnedCard.transform.position = transform.position;
+        spawnedCard.transform.rotation = Quaternion.identity;
+        
+        Rigidbody2D cardRb = spawnedCard.GetComponent<Rigidbody2D>();
+        cardRb.linearVelocity = Vector2.left * cardSpeed;  // Obstacle moves from right to left.
+    }
+    
 }

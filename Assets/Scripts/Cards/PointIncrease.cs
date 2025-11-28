@@ -20,6 +20,9 @@ public class PointIncrease : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        gameManager.currentScore += 5;
+        if (other.CompareTag("Player"))
+        {
+            gameManager.currentScore += 5;
+        }
     }
 }
