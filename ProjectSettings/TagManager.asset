@@ -53,6 +53,9 @@ TagManager:
   - name: Pillars
     uniqueID: 452790717
     locked: 0
+  - name: Torch
+    uniqueID: 1098935119
+    locked: 0
   - name: Player
     uniqueID: 693634987
     locked: 0
