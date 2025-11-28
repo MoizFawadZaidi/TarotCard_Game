@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -20,11 +21,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
+            rb.rotation = 15f;
             vertical = 1f;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
+            rb.rotation = -15f;
             vertical = -1f;
+        }
+        else
+        {
+            rb.rotation = 0f;
         }
 
         input = new Vector2(0, vertical);
