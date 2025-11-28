@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1408336d4b97da543be8f3e924796f87
+guid: d1bf1fabc82c5134dbb80d2cf8ce0757
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7443756053782179069
-    second: background_0
+      213: 7915756714661665657
+    second: meged foreground_0
+  - first:
+      213: -8652385911827868159
+    second: meged foreground_1
+  - first:
+      213: 6624486225607969903
+    second: meged foreground_2
+  - first:
+      213: 8276463412323961105
+    second: meged foreground_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,9 +58,9 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 9
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 12
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,37 +119,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: tvOS
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -152,23 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_0
+      name: meged foreground_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 128
-        height: 34
+        y: 67
+        width: 11
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30356abce4772b890800000000000000
-      internalID: -7443756053782179069
+      spriteID: 97b52d1eaca6add60800000000000000
+      internalID: 7915756714661665657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meged foreground_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 71
+        width: 36
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106d7e10bdc8ce780800000000000000
+      internalID: -8652385911827868159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meged foreground_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 17
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cc4d8cf17eeeb50800000000000000
+      internalID: 6624486225607969903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meged foreground_3
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11946187f97ebd270800000000000000
+      internalID: 8276463412323961105
       vertices: []
       indices: 
       edges: []
@@ -178,7 +227,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -187,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      background_0: -7443756053782179069
+      meged foreground_0: 7915756714661665657
+      meged foreground_1: -8652385911827868159
+      meged foreground_2: 6624486225607969903
+      meged foreground_3: 8276463412323961105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
