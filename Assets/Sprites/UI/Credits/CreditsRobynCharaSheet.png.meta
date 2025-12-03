@@ -145,10 +145,10 @@ TextureImporter:
       name: CreditsRobynCharaSheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 14
-        height: 15
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,10 +167,10 @@ TextureImporter:
       name: CreditsRobynCharaSheet_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1
-        width: 14
-        height: 15
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 84c80f3690d52524faa7c8bdd81bd2ca
     internalID: 0
     vertices: []
     indices: 
