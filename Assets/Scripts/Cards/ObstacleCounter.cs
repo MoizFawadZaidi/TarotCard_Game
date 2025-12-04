@@ -3,13 +3,20 @@ using UnityEngine;
 
 public class ObstacleCounter : MonoBehaviour
 {
+    private Vector3 localOffset;
     private PlayerStatus playerStatus;
     private HealthScript1 health;
     public int obstaclesPassed = 0;
     private void Awake()
     {
+        localOffset = transform.localPosition;
         playerStatus = GetComponentInParent<PlayerStatus>();
         health = GetComponentInParent<HealthScript1>();
+    }
+
+    private void LateUpdate()
+    {
+        transform.position = transform.parent.position + localOffset;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

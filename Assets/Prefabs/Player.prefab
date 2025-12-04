@@ -318,7 +318,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4955429908585827171}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -349,7 +349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5664243df8c88b40b52d3829d0195c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathCard: {fileID: -8772249721705197066, guid: 15a03b83c7fedd4498cf2e86400e79ac, type: 3}
   obstaclesPassed: 0
 --- !u!1 &6515149322550263078
 GameObject:
@@ -439,7 +438,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6515149322550263078}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -457,7 +456,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!114 &1396349927931398134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,5 +469,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5664243df8c88b40b52d3829d0195c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathCard: {fileID: -8772249721705197066, guid: 15a03b83c7fedd4498cf2e86400e79ac, type: 3}
   obstaclesPassed: 0
