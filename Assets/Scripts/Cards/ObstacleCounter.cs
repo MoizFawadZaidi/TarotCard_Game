@@ -3,32 +3,31 @@ using UnityEngine;
 
 public class ObstacleCounter : MonoBehaviour
 {
-    DamageScript damageScript;
-    float obstaclesPassed;
-    
-    [SerializeField] private GameObject[] obstaclePrefabs;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    void Awake()
+    private PlayerStatus playerStatus;
+    private HealthScript1 health;
+    public int obstaclesPassed = 0;
+    private void Awake()
     {
-        damageScript = FindAnyObjectByType<DamageScript>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        playerStatus = GetComponentInParent<PlayerStatus>();
+        health = GetComponentInParent<HealthScript1>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        foreach (GameObject obstacle in obstaclePrefabs)
+        if (other.CompareTag("Obstacle") && playerStatus.deathCardActive)
         {
-            if (damageScript.hasHitPlayer == false)
-            {
-                obstaclesPassed++;
-            }
+            //ActivateEffect();
+            
+            obstaclesPassed++;
+            Debug.Log("Number of obstacles passed =" + obstaclesPassed);
+             if (obstaclesPassed == 13)
+             {
+                 Debug.Log("Damage Taken!");
+                 
+                 health.TakeDamage(1);
+                 obstaclesPassed = 0;
+                 playerStatus.deathCardActive = false;
+             }
         }
     }
 }

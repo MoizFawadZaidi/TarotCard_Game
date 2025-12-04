@@ -7,16 +7,11 @@ public class HealthScript1 : MonoBehaviour
     public float maxHealth = 3;
 
     [SerializeField] private AudioClip damageSoundClip;
-
     
- 
-
+    
     private void Awake()
     {
         currentHealth = maxHealth;
-
- 
-
     }
 
     public void TakeDamage(float damage)
