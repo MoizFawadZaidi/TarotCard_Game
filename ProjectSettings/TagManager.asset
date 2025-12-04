@@ -53,6 +53,9 @@ TagManager:
   - name: Doors
     uniqueID: 725719511
     locked: 0
+  - name: Clock+Painting
+    uniqueID: 3766977603
+    locked: 0
   - name: Pillars
     uniqueID: 452790717
     locked: 0

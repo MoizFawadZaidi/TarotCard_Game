@@ -15,7 +15,9 @@ public class Cards : ScriptableObject
 
     public float spawnTime;
 
-    public float multiplierOrHalfing;
+    public float multiplier;
+
+    public float noOfObstaclesPassed;
 
     public float cardTimer;
 }

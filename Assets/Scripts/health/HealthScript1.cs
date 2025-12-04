@@ -20,6 +20,7 @@ public class HealthScript1 : MonoBehaviour
 
 
 
+
     private void Awake()
     {
         CurrentHealth = maxHealth;
@@ -30,8 +31,10 @@ public class HealthScript1 : MonoBehaviour
 
 
 
-    }
 
+    
+    
+    }
     public void TakeDamage(float damage)
     {
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, maxHealth);

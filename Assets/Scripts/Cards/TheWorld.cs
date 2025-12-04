@@ -38,12 +38,12 @@ public class TheWorld : MonoBehaviour
         isActivated = true;
 
         // spawn time for obstacle increases
-        spawnerScript.obstacleSpawnTime *= theWorld.multiplierOrHalfing;
+        spawnerScript.obstacleSpawnTime *= theWorld.multiplier;
 
         // Obsatcles move slow
         foreach (var obstacle in FindObjectsByType<SpawnerScript>(FindObjectsSortMode.None))
         {
-            spawnerScript.obstacleSpeed /= theWorld.multiplierOrHalfing;
+            spawnerScript.obstacleSpeed /= theWorld.multiplier;
         }
 
         var obstacles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
@@ -60,7 +60,7 @@ public class TheWorld : MonoBehaviour
 
         foreach (var projectile in FindObjectsByType<EnemyShooting>(FindObjectsSortMode.None))
         {
-            projectile.projectileSpeed = projectile.projectileSpeed / theWorld.multiplierOrHalfing;
+            projectile.projectileSpeed = projectile.projectileSpeed / theWorld.multiplier;
         }
 
         var projectiles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);

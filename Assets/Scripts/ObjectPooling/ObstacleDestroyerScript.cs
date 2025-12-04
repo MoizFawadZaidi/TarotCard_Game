@@ -1,8 +1,10 @@
+using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ObstacleDestroyerScript : MonoBehaviour
 {
+    
     private void Awake()
     {
         objectPooling = ObjectPooling.instance;
@@ -14,7 +16,6 @@ public class ObstacleDestroyerScript : MonoBehaviour
         if  (collision.CompareTag("Wall"))
         {
             objectPooling.RemoveObject(gameObject);
-            //Debug.Log("Object destroyed");
         }
     }
 }
