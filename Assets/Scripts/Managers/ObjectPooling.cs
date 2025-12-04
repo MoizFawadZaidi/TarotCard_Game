@@ -42,10 +42,10 @@ public class ObjectPooling : MonoBehaviour
         
     }
 
-    private void CreatePool(GameObject prefab, int Poolsize)
+    private void CreatePool(GameObject prefab, int poolsize)
     {
         Queue<GameObject> newPool = new Queue<GameObject>();
-        for (int i = 0; i < Poolsize; i++)
+        for (int i = 0; i < poolsize; i++)
         {
             GameObject obj = Instantiate(prefab, transform);
             obj.GetComponent<PrefabIdentifier>().SetPrefab(prefab);

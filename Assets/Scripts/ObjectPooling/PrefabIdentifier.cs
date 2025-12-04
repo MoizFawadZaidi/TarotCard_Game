@@ -6,8 +6,8 @@ public class PrefabIdentifier : MonoBehaviour
 {
     [HideInInspector] public GameObject prefab;
 
-    public void SetPrefab(GameObject _prefab)
+    public void SetPrefab(GameObject prefab)
     {
-        prefab = _prefab;
+        this.prefab = prefab;
     }
 }

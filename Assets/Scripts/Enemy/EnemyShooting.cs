@@ -29,7 +29,7 @@ public class EnemyShooting : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= nextFireTime)
             {
-                shoot();
+                Shoot();
 
                 timer = 0f;
                 nextFireTime = Random.Range(minFireDelay, maxFireDelay);
@@ -37,7 +37,7 @@ public class EnemyShooting : MonoBehaviour
         }
     }
 
-    void shoot()
+    void Shoot()
     {
         GameObject projectileToSpawn = projectilePrefabs[Random.Range(0, projectilePrefabs.Length)];
         GameObject spawnedProjectile = objectPool.ActivateObject(projectileToSpawn);
@@ -46,7 +46,7 @@ public class EnemyShooting : MonoBehaviour
         spawnedProjectile.transform.position = projectilePos.position;
         spawnedProjectile.transform.rotation = Quaternion.identity;
 
-        Rigidbody2D obstacleRB = spawnedProjectile.GetComponent<Rigidbody2D>();
-        obstacleRB.linearVelocity = Vector2.left * projectileSpeed;  // projectile moves from right to left.
+        Rigidbody2D obstacleRb = spawnedProjectile.GetComponent<Rigidbody2D>();
+        obstacleRb.linearVelocity = Vector2.left * projectileSpeed;  // projectile moves from right to left.
     }
 }

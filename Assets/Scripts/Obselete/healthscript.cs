@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class healthscript : MonoBehaviour
+public class Healthscript : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField] private int maxHealth = 3;

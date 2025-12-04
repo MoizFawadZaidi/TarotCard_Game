@@ -2095,7 +2095,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799168128}
   m_CullTransparentMesh: 1
---- !u!114 &811583657 stripped
+--- !u!114 &906954518 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
   m_PrefabInstance: {fileID: 2126336522615507860}
@@ -2189,7 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ddb2ad930d5594ca4b7554da2e6332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 811583657}
+  playerHealth: {fileID: 906954518}
   totalHealthBar: {fileID: 1427428803}
   currentHealthBar: {fileID: 581390992}
 --- !u!114 &1074907917
@@ -3449,6 +3449,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: flashCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: iFramesDuration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3530773356584080525, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_Name
       value: Player
