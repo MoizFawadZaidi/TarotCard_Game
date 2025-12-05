@@ -14,27 +14,20 @@ public class HealthScript1 : MonoBehaviour
     [SerializeField] private int flashCount;
     private SpriteRenderer spriteRend;
 
-
     [SerializeField] private AudioClip damageSoundClip;
-
-
-
-
-
+    
     private void Awake()
     {
         CurrentHealth = maxHealth;
-        
         spriteRend = GetComponent<SpriteRenderer>();
-        
-
-
-
-
-
-    
-    
     }
+    
+    public void ReplenishHealth(float replenishment)
+    {
+        CurrentHealth = Mathf.Clamp(CurrentHealth + replenishment, 0, maxHealth);
+        Debug.Log("current health: " + CurrentHealth);
+    }
+    
     public void TakeDamage(float damage)
     {
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, maxHealth);
@@ -42,10 +35,9 @@ public class HealthScript1 : MonoBehaviour
 
         if (CurrentHealth > 0)
         {
-            // player recieve damage
+            // player receive damage
             SoundFXManager.instance.PlaySoundFXClip(damageSoundClip, transform, 0.1f);
             StartCoroutine(Invulnerability());
-            //Debug.Log(CurrentHealth);
         }
         else
         {
@@ -58,12 +50,6 @@ public class HealthScript1 : MonoBehaviour
 
             // Load the Death Scene (name must match your scene)
             SceneManager.LoadScene("DeathScene");
-
-            
-
-
-
-
         }
     }
     private IEnumerator Invulnerability()
@@ -83,5 +69,7 @@ public class HealthScript1 : MonoBehaviour
         Physics2D.IgnoreLayerCollision(6, 7, false);
         Physics2D.IgnoreLayerCollision(6, 8, false);
     }
+
+
    
 }

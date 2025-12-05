@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  iFramesDuration: 0
-  flashCount: 1
+  iFramesDuration: 1
+  flashCount: 3
   damageSoundClip: {fileID: 8300000, guid: 377398326c147964393fff924f4230d5, type: 3}
 --- !u!114 &4743968096471331244
 MonoBehaviour:
@@ -338,7 +338,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &1276047211480034303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +458,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &1396349927931398134
 MonoBehaviour:
   m_ObjectHideFlags: 0

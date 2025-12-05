@@ -18,15 +18,14 @@ public class ObstacleCounter : MonoBehaviour
     {
         transform.position = transform.parent.position + localOffset;
     }
-
+    
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Obstacle") && playerStatus.deathCardActive)
         {
-            //ActivateEffect();
-            
             obstaclesPassed++;
-            Debug.Log("Number of obstacles passed =" + obstaclesPassed);
+            Debug.Log("Death Card = " + obstaclesPassed);
              if (obstaclesPassed == 13)
              {
                  Debug.Log("Damage Taken!");
@@ -35,6 +34,19 @@ public class ObstacleCounter : MonoBehaviour
                  obstaclesPassed = 0;
                  playerStatus.deathCardActive = false;
              }
+        }
+        else if (other.CompareTag("Obstacle") && playerStatus.highPriestessActive)
+        {
+            obstaclesPassed++;
+            Debug.Log("High Priestess = " + obstaclesPassed);
+            if (obstaclesPassed == 2)
+            {
+                //Debug.Log("Health Replenish!");
+                
+                health.ReplenishHealth(1);
+                obstaclesPassed = 0;
+                playerStatus.highPriestessActive = false;
+            }
         }
     }
 }

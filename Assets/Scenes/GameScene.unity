@@ -3098,6 +3098,7 @@ MonoBehaviour:
   cardPrefabs:
   - {fileID: 9092489592986245630, guid: 0d489721317ce0742ac3dc5a31ea6105, type: 3}
   - {fileID: 9041619853049458100, guid: 15a03b83c7fedd4498cf2e86400e79ac, type: 3}
+  - {fileID: 9041619853049458100, guid: 5371c699f343f3e4280948d070527b32, type: 3}
   cardSpawnTime: 6
   cardSpeed: 3
 --- !u!4 &1624411826 stripped
@@ -3352,6 +3353,7 @@ MonoBehaviour:
   bottomLaneObstacles: {fileID: 7556315812392773076, guid: f2ff5ff625b80bd479f82e874221ddc5, type: 3}
   pointIncrease: {fileID: 9092489592986245630, guid: 0d489721317ce0742ac3dc5a31ea6105, type: 3}
   deathCard: {fileID: 9041619853049458100, guid: 15a03b83c7fedd4498cf2e86400e79ac, type: 3}
+  highPriestessCard: {fileID: 9041619853049458100, guid: 5371c699f343f3e4280948d070527b32, type: 3}
   projectilePrefabs:
   - {fileID: 3566267588367233244, guid: d5321263d3f53454fa3b16e533b8faa0, type: 3}
   - {fileID: 3566267588367233244, guid: 9b0a8283667837a4a89e87724a70fe6d, type: 3}
@@ -3691,14 +3693,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: flashCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: iFramesDuration
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3530773356584080525, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3742,14 +3736,6 @@ PrefabInstance:
     - target: {fileID: 4217662664633641590, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5345290849085089844, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858243727413033475, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Constraints
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

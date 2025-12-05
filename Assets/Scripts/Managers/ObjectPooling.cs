@@ -14,6 +14,7 @@ public class ObjectPooling : MonoBehaviour
     public GameObject bottomLaneObstacles;
     public GameObject pointIncrease;
     public GameObject deathCard;
+    public GameObject highPriestessCard;
     [SerializeField] private GameObject[] projectilePrefabs;
 
     
@@ -36,6 +37,7 @@ public class ObjectPooling : MonoBehaviour
         CreatePool(middleLaneObstacles, 6);
         CreatePool(pointIncrease, 3);
         CreatePool(deathCard, 3);
+        CreatePool(highPriestessCard, 3);
         
         foreach (GameObject prefab in projectilePrefabs)
         {
