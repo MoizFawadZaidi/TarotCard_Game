@@ -1,22 +1,22 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class EnemyShooting : MonoBehaviour
+public class EnemyShooting : UnityEngine.MonoBehaviour
 {
-    [SerializeField] private GameObject[] projectilePrefabs;
-    [SerializeField] private float minFireDelay = 1f;
-    [SerializeField] private float maxFireDelay = 5f;
+    [UnityEngine.SerializeField] private UnityEngine.GameObject[] projectilePrefabs;
+    [UnityEngine.SerializeField] private float minFireDelay = 1f;
+    [UnityEngine.SerializeField] private float maxFireDelay = 5f;
     private float nextFireTime;
     private float timer;
 
-    public Transform projectilePos;
-    ObjectPooling objectPool;
+    public UnityEngine.Transform projectilePos;
+    global::ObjectPooling objectPool;
 
     public float projectileSpeed = 1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        objectPool = FindAnyObjectByType<ObjectPooling>();
+        objectPool = UnityEngine.Object.FindAnyObjectByType<global::ObjectPooling>();
         //projectileSpeed = GameStats.instance.defaultProjectileSpeed;
 
     }
@@ -26,27 +26,27 @@ public class EnemyShooting : MonoBehaviour
     {
         if (GameManager.instance.isPlaying)
         {
-            timer += Time.deltaTime;
+            timer += UnityEngine.Time.deltaTime;
             if (timer >= nextFireTime)
             {
                 Shoot();
 
                 timer = 0f;
-                nextFireTime = Random.Range(minFireDelay, maxFireDelay);
+                nextFireTime = UnityEngine.Random.Range(minFireDelay, maxFireDelay);
             }
         }
     }
 
     void Shoot()
     {
-        GameObject projectileToSpawn = projectilePrefabs[Random.Range(0, projectilePrefabs.Length)];
-        GameObject spawnedProjectile = objectPool.ActivateObject(projectileToSpawn);
+        UnityEngine.GameObject projectileToSpawn = projectilePrefabs[UnityEngine.Random.Range(0, projectilePrefabs.Length)];
+        UnityEngine.GameObject spawnedProjectile = objectPool.ActivateObject(projectileToSpawn);
 
         //spawnedProjectile.transform.position = transform.position;
         spawnedProjectile.transform.position = projectilePos.position;
-        spawnedProjectile.transform.rotation = Quaternion.identity;
+        spawnedProjectile.transform.rotation = UnityEngine.Quaternion.identity;
 
-        Rigidbody2D obstacleRb = spawnedProjectile.GetComponent<Rigidbody2D>();
-        obstacleRb.linearVelocity = Vector2.left * projectileSpeed;  // projectile moves from right to left.
+        UnityEngine.Rigidbody2D obstacleRb = spawnedProjectile.GetComponent<UnityEngine.Rigidbody2D>();
+        obstacleRb.linearVelocity = UnityEngine.Vector2.left * projectileSpeed;  // projectile moves from right to left.
     }
 }

@@ -1,20 +1,20 @@
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : UnityEngine.MonoBehaviour
 {
-    public GameObject mainMenuUI;
-    public GameObject creditsUI;
+    public UnityEngine.GameObject mainMenuUI;
+    public UnityEngine.GameObject creditsUI;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1); // loads your GameScene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1); // loads your GameScene
     }
 
     public void QuitGame()
     {
-        Application.Quit();
-        Debug.Log("Quit Game");
+        UnityEngine.Application.Quit();
+        UnityEngine.Debug.Log("Quit Game");
     }
 
     public void ShowCredits()

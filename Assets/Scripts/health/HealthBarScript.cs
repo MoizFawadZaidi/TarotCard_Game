@@ -1,11 +1,11 @@
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBarScript : MonoBehaviour
+public class HealthBarScript : UnityEngine.MonoBehaviour
 {
-    [SerializeField] private HealthScript1 playerHealth;
-    [SerializeField] private Image totalHealthBar;
-    [SerializeField] private Image currentHealthBar;
+    [UnityEngine.SerializeField] private global::HealthScript1 playerHealth;
+    [UnityEngine.SerializeField] private UnityEngine.UI.Image totalHealthBar;
+    [UnityEngine.SerializeField] private UnityEngine.UI.Image currentHealthBar;
 
     private void Start()
     {

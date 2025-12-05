@@ -1,80 +1,80 @@
 using System.Collections;
-using UnityEngine;
+using global::UnityEngine;
 
-public class TheWorld : MonoBehaviour
+public class TheWorld : UnityEngine.MonoBehaviour
 {
-    SpawnerScript spawnerScript;
-    EnemyShooting enemyShooting;
-    public Cards theWorld;
-    GameStats stats;
+    global::SpawnerScript spawnerScript;
+    global::EnemyShooting enemyShooting;
+    public global::Cards theWorld;
+    global::GameStats stats;
     public float obstacleSpeed;
     public float projectileSpeed;
     public float effectDuration;
     private bool isActivated;
-    private Coroutine slowMotionCoroutine;
+    private UnityEngine.Coroutine slowMotionCoroutine;
 
     private void Start()
     {
-        spawnerScript = FindAnyObjectByType<SpawnerScript>();
-        enemyShooting = FindAnyObjectByType<EnemyShooting>();
-        stats = FindAnyObjectByType<GameStats>();
+        spawnerScript = UnityEngine.Object.FindAnyObjectByType<global::SpawnerScript>();
+        enemyShooting = UnityEngine.Object.FindAnyObjectByType<global::EnemyShooting>();
+        stats = UnityEngine.Object.FindAnyObjectByType<global::GameStats>();
     }
 
     private void Update()
     {
         if (isActivated) return;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.Space))
         {
             StartCoroutine(SlowMotion());
         }
     }
 
-    IEnumerator SlowMotion()
+    System.Collections.IEnumerator SlowMotion()
     {
         yield return null;
         // Slow motion effect starts
-        Debug.Log("Effect started!");
+        UnityEngine.Debug.Log("Effect started!");
         isActivated = true;
 
         // spawn time for obstacle increases
         spawnerScript.obstacleSpawnTime *= theWorld.multiplier;
 
         // Obsatcles move slow
-        foreach (var obstacle in FindObjectsByType<SpawnerScript>(FindObjectsSortMode.None))
+        foreach (var obstacle in UnityEngine.Object.FindObjectsByType<global::SpawnerScript>(UnityEngine.FindObjectsSortMode.None))
         {
             spawnerScript.obstacleSpeed /= theWorld.multiplier;
         }
 
-        var obstacles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+        var obstacles = UnityEngine.Object.FindObjectsByType<UnityEngine.Rigidbody2D>(UnityEngine.FindObjectsSortMode.None);
         foreach (var rb in obstacles)
         {
             if (rb.CompareTag("Obstacle"))
             {
-                rb.linearVelocity = Vector2.left * theWorld.obsatcleSpeed;
+                rb.linearVelocity = UnityEngine.Vector2.left * theWorld.obsatcleSpeed;
             }
         }
 
         // Projectiles move slow
         GameStats.instance.defaultProjectileSpeed = theWorld.projectileSpeed;
 
-        foreach (var projectile in FindObjectsByType<EnemyShooting>(FindObjectsSortMode.None))
+        foreach (var projectile in UnityEngine.Object.FindObjectsByType<global::EnemyShooting>(UnityEngine.FindObjectsSortMode.None))
         {
             projectile.projectileSpeed = projectile.projectileSpeed / theWorld.multiplier;
         }
 
-        var projectiles = FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None);
+        var projectiles = UnityEngine.Object.FindObjectsByType<UnityEngine.Rigidbody2D>(UnityEngine.FindObjectsSortMode.None);
         foreach (var rb in projectiles)
         {
             if (rb.CompareTag("Projectile"))
             {
-                rb.linearVelocity = Vector2.left * theWorld.projectileSpeed;
+                rb.linearVelocity = UnityEngine.Vector2.left * theWorld.projectileSpeed;
             }
         }
 
         // Slow motion effect ends
-        yield return new WaitForSeconds (effectDuration);
-        Debug.Log("Effect ended!");
+        yield return new UnityEngine.WaitForSeconds (effectDuration);
+        UnityEngine.Debug.Log("Effect ended!");
         //isActivated = false;
 
         //if (isActivated == false)

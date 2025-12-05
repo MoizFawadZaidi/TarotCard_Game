@@ -1,14 +1,14 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : UnityEngine.MonoBehaviour
 {
     #region Singlton
 
-    public static GameManager instance;
+    public static global::GameManager instance;
 
     private void Awake()
     {
-        if (instance == null) instance = this;
+        if (GameManager.instance == null) GameManager.instance = this;
 
     }
 
@@ -22,10 +22,10 @@ public class GameManager : MonoBehaviour
     {
         if (isPlaying)
         {
-            currentScore += Time.deltaTime;
+            currentScore += UnityEngine.Time.deltaTime;
         }
 
-        if (Input.anyKeyDown)
+        if (UnityEngine.Input.anyKeyDown)
         {
             isPlaying = true;
         }
@@ -45,6 +45,6 @@ public class GameManager : MonoBehaviour
 
     public string PrettyScore()
     {
-        return Mathf.RoundToInt(currentScore).ToString();
+        return UnityEngine.Mathf.RoundToInt(currentScore).ToString();
     }
 }

@@ -1,17 +1,17 @@
-using System;
-using UnityEngine;
+using global::System;
+using global::UnityEngine;
 
-public class ObstacleCounter : MonoBehaviour
+public class ObstacleCounter : UnityEngine.MonoBehaviour
 {
-    private Vector3 localOffset;
-    private PlayerStatus playerStatus;
-    private HealthScript1 health;
+    private UnityEngine.Vector3 localOffset;
+    private global::PlayerStatus playerStatus;
+    private global::HealthScript1 health;
     public int obstaclesPassed = 0;
     private void Awake()
     {
         localOffset = transform.localPosition;
-        playerStatus = GetComponentInParent<PlayerStatus>();
-        health = GetComponentInParent<HealthScript1>();
+        playerStatus = GetComponentInParent<global::PlayerStatus>();
+        health = GetComponentInParent<global::HealthScript1>();
     }
 
     private void LateUpdate()
@@ -20,15 +20,15 @@ public class ObstacleCounter : MonoBehaviour
     }
     
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(UnityEngine.Collider2D other)
     {
         if (other.CompareTag("Obstacle") && playerStatus.deathCardActive)
         {
             obstaclesPassed++;
-            Debug.Log("Death Card = " + obstaclesPassed);
+            UnityEngine.Debug.Log("Death Card = " + obstaclesPassed);
              if (obstaclesPassed == 13)
              {
-                 Debug.Log("Damage Taken!");
+                 UnityEngine.Debug.Log("Damage Taken!");
                  
                  health.TakeDamage(1);
                  obstaclesPassed = 0;
@@ -38,7 +38,7 @@ public class ObstacleCounter : MonoBehaviour
         else if (other.CompareTag("Obstacle") && playerStatus.highPriestessActive)
         {
             obstaclesPassed++;
-            Debug.Log("High Priestess = " + obstaclesPassed);
+            UnityEngine.Debug.Log("High Priestess = " + obstaclesPassed);
             if (obstaclesPassed == 2)
             {
                 //Debug.Log("Health Replenish!");

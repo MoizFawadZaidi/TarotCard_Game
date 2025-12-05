@@ -1,20 +1,20 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class ParallaxLoop : MonoBehaviour
+public class ParallaxLoop : UnityEngine.MonoBehaviour
 {
     private float width;
-    public Transform pair;
+    public UnityEngine.Transform pair;
 
     void Start()
     {
-        width = GetComponent<SpriteRenderer>().bounds.size.x;
+        width = GetComponent<UnityEngine.SpriteRenderer>().bounds.size.x;
     }
 
     void Update()
     {
         if (transform.position.x <= -width)
         {
-            transform.position = pair.position + Vector3.right * width;
+            transform.position = pair.position + UnityEngine.Vector3.right * width;
         }
     }
 }

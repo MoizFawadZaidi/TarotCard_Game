@@ -1,12 +1,12 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class ParallaxLayer : MonoBehaviour
+public class ParallaxLayer : UnityEngine.MonoBehaviour
 {
     public float speed = 0.5f;
 
     void Update()
     {
-        transform.position += Vector3.left * speed * Time.deltaTime;
+        transform.position += UnityEngine.Vector3.left * speed * UnityEngine.Time.deltaTime;
     }
 }
 

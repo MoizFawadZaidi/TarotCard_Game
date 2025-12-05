@@ -1,11 +1,11 @@
 using Unity.Hierarchy;
-using UnityEngine;
+using global::UnityEngine;
 
-[CreateAssetMenu (fileName = "New Card", menuName = "Card/Minoin")]
-public class Cards : ScriptableObject
+[UnityEngine.CreateAssetMenu (fileName = "New Card", menuName = "Card/Minoin")]
+public class Cards : UnityEngine.ScriptableObject
 {
     public string cardName;
-    public Sprite cardSprite;
+    public UnityEngine.Sprite cardSprite;
 
     public float obsatcleSpeed;
     public float projectileSpeed;

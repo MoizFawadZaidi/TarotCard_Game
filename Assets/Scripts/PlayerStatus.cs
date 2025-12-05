@@ -1,6 +1,6 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : UnityEngine.MonoBehaviour
 {
     public bool deathCardActive = false;
     public bool highPriestessActive =  false;

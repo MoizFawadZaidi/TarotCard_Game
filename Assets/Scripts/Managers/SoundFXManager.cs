@@ -1,23 +1,23 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class SoundFXManager : MonoBehaviour
+public class SoundFXManager : UnityEngine.MonoBehaviour
 {
-    public static SoundFXManager instance;
+    public static global::SoundFXManager instance;
 
-    [SerializeField] private AudioSource soundFXObject;
+    [UnityEngine.SerializeField] private UnityEngine.AudioSource soundFXObject;
 
     private void Awake()
     {
-        if (instance == null )
+        if (SoundFXManager.instance == null )
         {
-            instance = this;
+            SoundFXManager.instance = this;
         }
     }
 
-    public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
+    public void PlaySoundFXClip(UnityEngine.AudioClip audioClip, UnityEngine.Transform spawnTransform, float volume)
     {
         // spawn gameObject
-        AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
+        UnityEngine.AudioSource audioSource = UnityEngine.Object.Instantiate(soundFXObject, spawnTransform.position, UnityEngine.Quaternion.identity);
 
         // assign audioClip
         audioSource.clip = audioClip;
@@ -32,6 +32,6 @@ public class SoundFXManager : MonoBehaviour
         float clipLength = audioSource.clip.length;
 
         // destroy clip after it has played
-        Destroy(audioSource.gameObject, clipLength);
+        UnityEngine.Object.Destroy(audioSource.gameObject, clipLength);
     }
 }

@@ -1,8 +1,8 @@
-using System;
+using global::System;
 using System.Runtime.CompilerServices;
-using UnityEngine;
+using global::UnityEngine;
 
-public class ObstacleDestroyerScript : MonoBehaviour
+public class ObstacleDestroyerScript : UnityEngine.MonoBehaviour
 {
     
     private void Awake()
@@ -10,8 +10,8 @@ public class ObstacleDestroyerScript : MonoBehaviour
         objectPooling = ObjectPooling.instance;
     }
 
-    ObjectPooling objectPooling;
-    private void OnTriggerEnter2D (Collider2D collision)
+    global::ObjectPooling objectPooling;
+    private void OnTriggerEnter2D (UnityEngine.Collider2D collision)
     {
         if  (collision.CompareTag("Wall"))
         {

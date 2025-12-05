@@ -1,13 +1,13 @@
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EscapeToMenu : MonoBehaviour
+public class EscapeToMenu : UnityEngine.MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.Escape))
         {
-            SceneManager.LoadScene(0); // 0 = MainMenu in Build Settings
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0); // 0 = MainMenu in Build Settings
         }
     }
 }

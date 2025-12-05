@@ -1,15 +1,15 @@
-using System;
-using UnityEngine;
+using global::System;
+using global::UnityEngine;
 
-public class DamageScript : MonoBehaviour
+public class DamageScript : UnityEngine.MonoBehaviour
 {
-    [SerializeField] public float damage;
+    [UnityEngine.SerializeField] public float damage;
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(UnityEngine.Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<HealthScript1>().TakeDamage(damage);
+            other.gameObject.GetComponent<global::HealthScript1>().TakeDamage(damage);
         }
     }
 }

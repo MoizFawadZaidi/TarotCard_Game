@@ -1,10 +1,10 @@
-using UnityEngine;
-using TMPro;
+using global::UnityEngine;
+using global::TMPro;
 
-public class UI_Manager : MonoBehaviour
+public class UI_Manager : UnityEngine.MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI scoreUI;
-    GameManager gm;
+    [UnityEngine.SerializeField] private TMPro.TextMeshProUGUI scoreUI;
+    global::GameManager gm;
 
     private void Start()
     {

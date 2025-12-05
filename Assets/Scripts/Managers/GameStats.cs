@@ -1,8 +1,8 @@
-using UnityEngine;
+using global::UnityEngine;
 
-public class GameStats : MonoBehaviour
+public class GameStats : UnityEngine.MonoBehaviour
 {
-    public static GameStats instance;
+    public static global::GameStats instance;
 
     public float defaultProjectileSpeed = 6f;
     public float defaultObstacleSpeed = 4f;
@@ -12,9 +12,9 @@ public class GameStats : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        if (GameStats.instance == null)
         {
-            instance = this;
+            GameStats.instance = this;
             //DontDestroyOnLoad(gameObject);
 
             //globalProjectileSpeed = defaultProjectileSpeed;

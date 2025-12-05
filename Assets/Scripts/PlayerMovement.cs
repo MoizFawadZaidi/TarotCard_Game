@@ -1,17 +1,17 @@
 using System.Collections;
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.UIElements;
 
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : UnityEngine.MonoBehaviour
 {
     public float moveSpeed = 5f;
-    private Rigidbody2D rb;
-    private Vector2 input;
+    private UnityEngine.Rigidbody2D rb;
+    private UnityEngine.Vector2 input;
     
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<UnityEngine.Rigidbody2D>();
     }
     
     // Update is called once per frame
@@ -19,12 +19,12 @@ public class PlayerMovement : MonoBehaviour
     {
         float vertical = 0f;
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (UnityEngine.Input.GetKey(UnityEngine.KeyCode.UpArrow))
         {
             rb.rotation = 15f;
             vertical = 1f;
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (UnityEngine.Input.GetKey(UnityEngine.KeyCode.DownArrow))
         {
             rb.rotation = -15f;
             vertical = -1f;
@@ -34,11 +34,11 @@ public class PlayerMovement : MonoBehaviour
             rb.rotation = 0f;
         }
 
-        input = new Vector2(0, vertical);
+        input = new UnityEngine.Vector2(0, vertical);
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(0, input.y * moveSpeed);
+        rb.linearVelocity = new UnityEngine.Vector2(0, input.y * moveSpeed);
     }
 }

@@ -1,12 +1,12 @@
 using Unity.VisualScripting;
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.Rendering;
 
-public class PrefabIdentifier : MonoBehaviour
+public class PrefabIdentifier : UnityEngine.MonoBehaviour
 {
-    [HideInInspector] public GameObject prefab;
+    [UnityEngine.HideInInspector] public UnityEngine.GameObject prefab;
 
-    public void SetPrefab(GameObject prefab)
+    public void SetPrefab(UnityEngine.GameObject prefab)
     {
         this.prefab = prefab;
     }

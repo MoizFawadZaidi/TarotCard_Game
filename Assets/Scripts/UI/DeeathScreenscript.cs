@@ -1,28 +1,27 @@
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class DeathSceneUI : MonoBehaviour
+public class DeathSceneUI : UnityEngine.MonoBehaviour
 {   
 
 
-    public Text finalScoreText;
+    public UnityEngine.UI.Text finalScoreText;
     
 
     void Start()
     {
         
-        float saved = PlayerPrefs.GetFloat("LastScoreFloat", 0f);
+        float saved = UnityEngine.PlayerPrefs.GetFloat("LastScoreFloat", 0f);
 
         
-        int display = Mathf.RoundToInt(saved);
+        int display = UnityEngine.Mathf.RoundToInt(saved);
         finalScoreText.text = "POINTS: " + display.ToString();
     }
 
     public void Restart()
     {
-        
-        SceneManager.LoadScene("GameScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
 
     public void Quit()

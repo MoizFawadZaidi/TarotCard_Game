@@ -1,28 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEngine;
+using global::UnityEngine;
 using UnityEngine.UIElements;
 
-public class SpawnerScript : MonoBehaviour
+public class SpawnerScript : UnityEngine.MonoBehaviour
 {
-    [SerializeField] private Transform[] lanes;
+    [UnityEngine.SerializeField] private UnityEngine.Transform[] lanes;
     
-    [SerializeField] private GameObject[] obstaclePrefabs;
+    [UnityEngine.SerializeField] private UnityEngine.GameObject[] obstaclePrefabs;
     public float obstacleSpawnTime = 2f;
     public float obstacleSpeed = 1f;
     private float timeUntilObstacleSpawn;
     
-    [SerializeField] private GameObject[] cardPrefabs;
+    [UnityEngine.SerializeField] private UnityEngine.GameObject[] cardPrefabs;
     public float cardSpawnTime = 2f;
     public float cardSpeed = 1f;
     private float timeUntilCardSpawn;
-    
-    ObjectPooling objectPool;
+
+    global::ObjectPooling objectPool;
 
     private void Awake()
     {
-        objectPool = FindAnyObjectByType<ObjectPooling>();
+        objectPool = UnityEngine.Object.FindAnyObjectByType<global::ObjectPooling>();
     }
 
     private void Update()
@@ -36,8 +36,8 @@ public class SpawnerScript : MonoBehaviour
     // Time until the next obstacle spawns 
     private void SpawnLoop()
     {
-        timeUntilObstacleSpawn += Time.deltaTime;
-        timeUntilCardSpawn += Time.deltaTime;
+        timeUntilObstacleSpawn += UnityEngine.Time.deltaTime;
+        timeUntilCardSpawn += UnityEngine.Time.deltaTime;
 
         // If the TimeUntilObstacleSpawn has reached the obstacleSpawnTime value then: spawn an obstacle and set timeUntilObstacleSpawn to 0.
         if (timeUntilObstacleSpawn >= obstacleSpawnTime) 
@@ -57,29 +57,29 @@ public class SpawnerScript : MonoBehaviour
     {
 
         // Obstacle spawns at correct location, transform and rotation
-        GameObject obstacleToSpawn = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
-        GameObject spawnedObstacle = objectPool.ActivateObject(obstacleToSpawn);
+        UnityEngine.GameObject obstacleToSpawn = obstaclePrefabs[UnityEngine.Random.Range(0, obstaclePrefabs.Length)];
+        UnityEngine.GameObject spawnedObstacle = objectPool.ActivateObject(obstacleToSpawn);
 
         spawnedObstacle.transform.position = transform.position;
-        spawnedObstacle.transform.rotation = Quaternion.identity;
+        spawnedObstacle.transform.rotation = UnityEngine.Quaternion.identity;
 
-        Rigidbody2D obstacleRb = spawnedObstacle.GetComponent<Rigidbody2D>();
-        obstacleRb.linearVelocity = Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.
+        UnityEngine.Rigidbody2D obstacleRb = spawnedObstacle.GetComponent<UnityEngine.Rigidbody2D>();
+        obstacleRb.linearVelocity = UnityEngine.Vector2.left * obstacleSpeed;  // Obstacle moves from right to left.
     }
 
     private void SpawnCard()
     {
         // Cards spawning
-        GameObject cardToSpawn = cardPrefabs[Random.Range(0, cardPrefabs.Length)];
-        GameObject spawnedCard = objectPool.ActivateObject(cardToSpawn);
-        
-        Transform lane = lanes[Random.Range(0, lanes.Length)];
+        UnityEngine.GameObject cardToSpawn = cardPrefabs[UnityEngine.Random.Range(0, cardPrefabs.Length)];
+        UnityEngine.GameObject spawnedCard = objectPool.ActivateObject(cardToSpawn);
+
+        UnityEngine.Transform lane = lanes[UnityEngine.Random.Range(0, lanes.Length)];
         
         spawnedCard.transform.position = lane.position;
-        spawnedCard.transform.rotation = Quaternion.identity;
-        
-        Rigidbody2D cardRb = spawnedCard.GetComponent<Rigidbody2D>();
-        cardRb.linearVelocity = Vector2.left * cardSpeed;  // Obstacle moves from right to left.
+        spawnedCard.transform.rotation = UnityEngine.Quaternion.identity;
+
+        UnityEngine.Rigidbody2D cardRb = spawnedCard.GetComponent<UnityEngine.Rigidbody2D>();
+        cardRb.linearVelocity = UnityEngine.Vector2.left * cardSpeed;  // Obstacle moves from right to left.
     }
     
 }
