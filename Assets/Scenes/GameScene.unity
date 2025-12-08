@@ -1091,6 +1091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb6b0d6c3ae537844beae451500471a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlsParent: {fileID: 1523677027}
   currentScore: 0
   isPlaying: 0
 --- !u!4 &478123991
