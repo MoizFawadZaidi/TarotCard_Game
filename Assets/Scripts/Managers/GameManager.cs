@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject controlsParent;
+    
     #region Singlton
 
     public static GameManager instance;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         if (isPlaying)
         {
             currentScore += Time.deltaTime;
+            controlsParent.SetActive(false);
         }
 
         if (Input.anyKeyDown)
