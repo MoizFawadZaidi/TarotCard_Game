@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310086490adb1084485b6c63ff556311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathCardParent: {fileID: 0}
 --- !u!114 &-5731619493393284863
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,19 +1,40 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
+    [SerializeField] GameObject deathCardParent;
+    [SerializeField] GameObject highPriestessParent;
+    
     public bool deathCardActive = false;
     public bool highPriestessActive =  false;
+    private bool isRevealing = false;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void TriggerDeathCardReveal()
     {
-        
+        if (!isRevealing)
+        {
+            StartCoroutine(ShowDeathCard());
+        }
     }
+    
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator ShowDeathCard()
     {
+        isRevealing = true;
+        Time.timeScale = 0f;
+        deathCardParent.SetActive(true);
+
+        Animator animator = deathCardParent.GetComponent<Animator>();
+        animator.Update(0f);
+        animator.Play("DeathCardReveal",  -1, 0f);
         
+        float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
+        yield return new WaitForSecondsRealtime(animLength);
+
+        deathCardParent.SetActive(false);
+        Time.timeScale = 1f;
+        isRevealing = false;
     }
 }
