@@ -41,8 +41,6 @@ public class ObstacleCounter : MonoBehaviour
             Debug.Log("High Priestess = " + obstaclesPassed);
             if (obstaclesPassed == 2)
             {
-                //Debug.Log("Health Replenish!");
-                
                 health.ReplenishHealth(1);
                 obstaclesPassed = 0;
                 playerStatus.highPriestessActive = false;

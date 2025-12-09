@@ -18,6 +18,14 @@ public class PlayerStatus : MonoBehaviour
             StartCoroutine(ShowDeathCard());
         }
     }
+
+    public void TriggerHighPriestessReveal()
+    {
+        if (!isRevealing)
+        {
+            StartCoroutine(ShowHighPriestess());
+        }
+    }
     
 
     public IEnumerator ShowDeathCard()
@@ -28,12 +36,30 @@ public class PlayerStatus : MonoBehaviour
 
         Animator animator = deathCardParent.GetComponent<Animator>();
         animator.Update(0f);
-        animator.Play("DeathCardReveal",  -1, 0f);
+        animator.Play("CardReveal",  -1, 0f);
         
         float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
         yield return new WaitForSecondsRealtime(animLength);
 
         deathCardParent.SetActive(false);
+        Time.timeScale = 1f;
+        isRevealing = false;
+    }
+
+    public IEnumerator ShowHighPriestess()
+    {
+        isRevealing = true;
+        Time.timeScale = 0f;
+        highPriestessParent.SetActive(true);
+
+        Animator animator = highPriestessParent.GetComponent<Animator>();
+        animator.Update(0f);
+        animator.Play("CardReveal",  -1, 0f);
+        
+        float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
+        yield return new WaitForSecondsRealtime(animLength);
+        
+        highPriestessParent.SetActive(false);
         Time.timeScale = 1f;
         isRevealing = false;
     }

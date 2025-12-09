@@ -493,8 +493,9 @@ GameObject:
   - component: {fileID: 110654882}
   - component: {fileID: 110654884}
   - component: {fileID: 110654883}
+  - component: {fileID: 110654885}
   m_Layer: 5
-  m_Name: highPreistess
+  m_Name: HighPriestess
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -540,7 +541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -984161475391541111, guid: 45d8bee6c7e55c9488b7caa845c47afe, type: 3}
+  m_Sprite: {fileID: 2333809651697214070, guid: 2049435439d0c704e87aa8edf80881c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -558,6 +559,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110654881}
   m_CullTransparentMesh: 1
+--- !u!95 &110654885
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110654881}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fddc78d7f02761249aef4a1bc456416d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &175335807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,7 +3602,7 @@ GameObject:
   - component: {fileID: 1562631434}
   - component: {fileID: 1562631433}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: HighPriestessTXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3637,7 +3660,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.1
-  m_Text: Takes away a health point after you have dodged 13 enemies.
+  m_Text: replenishes a health point after you have dodged 2 enemies.
 --- !u!222 &1562631434
 CanvasRenderer:
   m_ObjectHideFlags: 0
