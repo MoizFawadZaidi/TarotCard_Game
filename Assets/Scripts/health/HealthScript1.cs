@@ -60,7 +60,7 @@ public class HealthScript1 : MonoBehaviour
         for (int i = 0; i < flashCount; i++)
         {
             
-            spriteRend.color = new Color(1, 0, 0, 0.5f);
+            spriteRend.color = new Color(1, 1, 1, 0.1f);
             yield return new WaitForSeconds(iFramesDuration / flashCount *2);
             spriteRend.color = new Color(1, 1, 1, 1);
             yield return new WaitForSeconds(iFramesDuration / flashCount *2);
