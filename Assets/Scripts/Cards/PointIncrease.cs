@@ -5,6 +5,7 @@ using UnityEngine;
 public class PointIncrease : MonoBehaviour
 {
     private GameManager gameManager;
+    [SerializeField] private AudioClip bonusPointsSoundClip;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class PointIncrease : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SoundFXManager.instance.PlaySoundFXClip(bonusPointsSoundClip, transform, 0.1f);
             gameManager.currentScore += 5;
             gameObject.SetActive(false);
         }

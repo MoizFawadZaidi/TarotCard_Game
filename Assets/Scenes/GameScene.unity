@@ -4586,6 +4586,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
+      propertyPath: damageSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d8001174643ea74ab198674c19e3c84, type: 3}
+    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: iFramesDuration
       value: 0.3
       objectReference: {fileID: 0}

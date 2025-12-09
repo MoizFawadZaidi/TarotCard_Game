@@ -31,8 +31,7 @@ public class HealthScript1 : MonoBehaviour
     public void TakeDamage(float damage)
     {
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, maxHealth);
-
-
+        
         if (CurrentHealth > 0)
         {
             // player receive damage

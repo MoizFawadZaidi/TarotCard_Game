@@ -262,6 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3365ea341449aef4095d9d89a89a4cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonusPointsSoundClip: {fileID: 8300000, guid: 6fb82823f0076734b9c0e33fe965db32, type: 3}
 --- !u!114 &735399564859224601
 MonoBehaviour:
   m_ObjectHideFlags: 0
