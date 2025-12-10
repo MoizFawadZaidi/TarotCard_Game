@@ -270,7 +270,7 @@ MonoBehaviour:
   maxHealth: 3
   iFramesDuration: 0.3
   flashCount: 3
-  damageSoundClip: {fileID: 8300000, guid: 377398326c147964393fff924f4230d5, type: 3}
+  damageSoundClip: {fileID: 8300000, guid: 0d8001174643ea74ab198674c19e3c84, type: 3}
 --- !u!114 &4743968096471331244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +335,7 @@ Transform:
   m_GameObject: {fileID: 4955429908585827171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -413,7 +413,7 @@ Transform:
   m_GameObject: {fileID: 6039651293644500938}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.5, z: 0}
+  m_LocalPosition: {x: -1, y: -5.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

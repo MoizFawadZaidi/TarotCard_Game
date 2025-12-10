@@ -1291,6 +1291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlsParent: {fileID: 1177279840}
+  backgroundMusic: {fileID: 4821852336704754185, guid: 598a52845e8c85649a393a27aea2bceb, type: 3}
   currentScore: 0
   isPlaying: 0
 --- !u!4 &478123991
@@ -4569,30 +4570,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2722019401532463600, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722019401532463600, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722019401532463600, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2722019401532463600, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: damageSoundClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0d8001174643ea74ab198674c19e3c84, type: 3}
-    - target: {fileID: 2988096604161702930, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: iFramesDuration
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 3530773356584080525, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4637,18 +4614,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4743968096471331244, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: end
-      value: 
-      objectReference: {fileID: 1661402274}
-    - target: {fileID: 4743968096471331244, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: start
-      value: 
-      objectReference: {fileID: 592794821}
-    - target: {fileID: 4743968096471331244, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
-      propertyPath: deathCard
-      value: 
-      objectReference: {fileID: -8772249721705197066, guid: 15a03b83c7fedd4498cf2e86400e79ac, type: 3}
     - target: {fileID: 4743968096471331244, guid: 43cb7ed3ad57768499690db4818ce8f6, type: 3}
       propertyPath: deathCardParent
       value: 
