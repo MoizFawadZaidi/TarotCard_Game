@@ -287,6 +287,7 @@ MonoBehaviour:
   highPriestessParent: {fileID: 0}
   deathCardActive: 0
   highPriestessActive: 0
+  powerUpSoundClip: {fileID: 8300000, guid: 3116085867c4892449847788a3a6f847, type: 3}
 --- !u!95 &2298232563490717029
 Animator:
   serializedVersion: 7

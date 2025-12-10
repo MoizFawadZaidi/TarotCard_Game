@@ -11,11 +11,14 @@ public class PlayerStatus : MonoBehaviour
     public bool highPriestessActive =  false;
     private bool isRevealing = false;
     
+    [SerializeField] private AudioClip powerUpSoundClip;
+    
     public void TriggerDeathCardReveal()
     {
         if (!isRevealing)
         {
             StartCoroutine(ShowDeathCard());
+            SoundFXManager.instance.PlaySoundFXClip(powerUpSoundClip, transform, 0.1f);
         }
     }
 
@@ -24,6 +27,7 @@ public class PlayerStatus : MonoBehaviour
         if (!isRevealing)
         {
             StartCoroutine(ShowHighPriestess());
+            SoundFXManager.instance.PlaySoundFXClip(powerUpSoundClip, transform, 0.1f);
         }
     }
     

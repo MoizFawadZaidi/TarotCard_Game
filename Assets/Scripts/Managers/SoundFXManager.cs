@@ -24,6 +24,9 @@ public class SoundFXManager : MonoBehaviour
 
         // assign volume
         audioSource.volume = volume;
+        
+        // play whilst game is paused
+        audioSource.ignoreListenerPause = true;
 
         // play sound
         audioSource.Play();
