@@ -4,24 +4,27 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject controlsParent;
-    [SerializeField] AudioSource backgroundMusic;
+    public AudioSource backgroundMusic;
     
     #region Singlton
 
     public static GameManager instance;
-
-    private void Start()
-    {
-        //SoundFXManager.instance.PlaySoundFXClip(backgroundMusic, transform, 0.05f);
-        //Instantiate(backgroundMusic);
-        backgroundMusic.loop =  true;
-        backgroundMusic.ignoreListenerPause = true;
-        //backgroundMusic.Play();
-    }
-
+    
+    
     private void Awake()
     {
         if (instance == null) instance = this;
+        
+        backgroundMusic.playOnAwake = false;
+        backgroundMusic.Stop();
+        backgroundMusic.volume = 0.05f;
+        backgroundMusic.loop =  true;
+        backgroundMusic.ignoreListenerPause = true;
+    }
+    
+    private void Start()
+    {
+        backgroundMusic.Play();
     }
 
     #endregion
