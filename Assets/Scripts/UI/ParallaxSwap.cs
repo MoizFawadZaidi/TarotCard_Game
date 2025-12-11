@@ -5,10 +5,13 @@ public class ParallaxSwap : MonoBehaviour
     public GameObject defaultParallax;
     public GameObject outdoorParallax;
 
-    public CanvasGroup fadePanel;  
+    public CanvasGroup fadePanel;
 
-    private int nextSwapScore = 5;
+    public int nextSwapScore;
+    public int swapScore;
     private bool isFading = false;
+    
+    public float fadeSpeed;
 
     void Update()
     {
@@ -17,7 +20,7 @@ public class ParallaxSwap : MonoBehaviour
         if (score >= nextSwapScore && !isFading)
         {
             StartCoroutine(FadeAndSwap());
-            nextSwapScore += 5;
+            nextSwapScore += swapScore;
         }
     }
 
@@ -28,7 +31,7 @@ public class ParallaxSwap : MonoBehaviour
         // Fade IN
         while (fadePanel.alpha < 1f)
         {
-            fadePanel.alpha += Time.deltaTime * 1.5f;
+            fadePanel.alpha += Time.deltaTime * fadeSpeed;
             yield return null;
         }
 
@@ -39,7 +42,7 @@ public class ParallaxSwap : MonoBehaviour
         // Fade OUT
         while (fadePanel.alpha > 0f)
         {
-            fadePanel.alpha -= Time.deltaTime * 1.5f; 
+            fadePanel.alpha -= Time.deltaTime * fadeSpeed; 
             yield return null;
         }
 
