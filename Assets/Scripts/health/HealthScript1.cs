@@ -25,7 +25,7 @@ public class HealthScript1 : MonoBehaviour
     public void ReplenishHealth(float replenishment)
     {
         CurrentHealth = Mathf.Clamp(CurrentHealth + replenishment, 0, maxHealth);
-        Debug.Log("current health: " + CurrentHealth);
+        //Debug.Log("current health: " + CurrentHealth);
     }
     
     public void TakeDamage(float damage)
@@ -53,7 +53,7 @@ public class HealthScript1 : MonoBehaviour
     }
     private IEnumerator Invulnerability()
     {
-        Debug.Log(iFramesDuration / flashCount *2);
+        //Debug.Log(iFramesDuration / flashCount *2);
         Physics2D.IgnoreLayerCollision(6, 7, true);
         Physics2D.IgnoreLayerCollision(6, 8, true);
         for (int i = 0; i < flashCount; i++)

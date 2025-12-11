@@ -18,7 +18,7 @@ public class PointIncrease : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             SoundFXManager.instance.PlaySoundFXClip(bonusPointsSoundClip, transform, 0.1f);
-            gameManager.currentScore += 5;
+            gameManager.currentScore += 20;
             gameObject.SetActive(false);
         }
     }

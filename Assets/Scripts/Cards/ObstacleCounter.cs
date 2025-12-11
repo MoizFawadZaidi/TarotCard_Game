@@ -25,10 +25,10 @@ public class ObstacleCounter : MonoBehaviour
         if (other.CompareTag("Obstacle") && playerStatus.deathCardActive)
         {
             obstaclesPassed++;
-            Debug.Log("Death Card = " + obstaclesPassed);
+            //Debug.Log("Death Card = " + obstaclesPassed);
              if (obstaclesPassed == 13)
              {
-                 Debug.Log("Damage Taken!");
+                 //Debug.Log("Damage Taken!");
                  
                  health.TakeDamage(1);
                  obstaclesPassed = 0;
@@ -38,7 +38,7 @@ public class ObstacleCounter : MonoBehaviour
         else if (other.CompareTag("Obstacle") && playerStatus.highPriestessActive)
         {
             obstaclesPassed++;
-            Debug.Log("High Priestess = " + obstaclesPassed);
+            //Debug.Log("High Priestess = " + obstaclesPassed);
             if (obstaclesPassed == 2)
             {
                 health.ReplenishHealth(1);

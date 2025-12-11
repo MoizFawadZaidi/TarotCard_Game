@@ -11,7 +11,7 @@ public class DeathCard : MonoBehaviour
             other.GetComponent<PlayerStatus>().TriggerDeathCardReveal();
             
             other.GetComponent<PlayerStatus>().deathCardActive = true;
-            Debug.Log(gameObject.name + " has been triggered");
+            //Debug.Log(gameObject.name + " has been triggered");
             gameObject.SetActive(false);
         }
     }

@@ -12,7 +12,7 @@ public class HighPriestess : MonoBehaviour
             other.GetComponent<PlayerStatus>().TriggerHighPriestessReveal();
             
             other.GetComponent<PlayerStatus>().highPriestessActive = true;
-            Debug.Log(gameObject.name + " has been triggered");
+            //Debug.Log(gameObject.name + " has been triggered");
             gameObject.SetActive(false);
         }
     }
