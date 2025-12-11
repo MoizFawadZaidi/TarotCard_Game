@@ -44,13 +44,16 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2477229979
+    locked: 0
   - name: Bookshelf
     uniqueID: 3555633779
     locked: 0
   - name: Cauldron
     uniqueID: 24542757
     locked: 0
-  - name: Doors
+  - name: Doors+Fence
     uniqueID: 725719511
     locked: 0
   - name: Clock+Painting
@@ -73,6 +76,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 3144019645
+    locked: 0
+  - name: New Layer 12
+    uniqueID: 2090575925
     locked: 0
   m_RenderingLayers:
   - Default

@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: de566922b224f5b45b35583248e7a656
+guid: 4a465edccf57b1f43a3d6c93a5bb7c2c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7344175433272962699
-    second: torch sprite sheet_0
+      213: 2688077028254164717
+    second: swinging LAMP final_0
   - first:
-      213: 7996655174066873397
-    second: torch sprite sheet_1
+      213: -1828311583231864221
+    second: swinging LAMP final_1
   - first:
-      213: -8343915251053635116
-    second: torch sprite sheet_2
+      213: 957766017684447589
+    second: swinging LAMP final_2
   - first:
-      213: 8421193770517065185
-    second: torch sprite sheet_3
+      213: 3572091664595839450
+    second: swinging LAMP final_3
   - first:
-      213: -8679539120980999065
-    second: torch sprite sheet_4
+      213: 6972243151489440275
+    second: swinging LAMP final_4
+  - first:
+      213: -7176920450413562180
+    second: swinging LAMP final_5
+  - first:
+      213: 1355273850524542218
+    second: swinging LAMP final_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +128,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -135,24 +141,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,13 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: torch sprite sheet_0
+      name: swinging LAMP final_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,42 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5715d93ca5f341a90800000000000000
-      internalID: -7344175433272962699
+      spriteID: de62afda0d7fd4520800000000000000
+      internalID: 2688077028254164717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 534ab814383d9fe60800000000000000
-      internalID: 7996655174066873397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torch sprite sheet_2
+      name: swinging LAMP final_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,42 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d9dbf08945743c80800000000000000
-      internalID: -8343915251053635116
+      spriteID: 3629bb64d4880a6e0800000000000000
+      internalID: -1828311583231864221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ede66ced171ed470800000000000000
-      internalID: 8421193770517065185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torch sprite sheet_4
+      name: swinging LAMP final_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,8 +216,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76442d7d7251c8780800000000000000
-      internalID: -8679539120980999065
+      spriteID: 561a50e5e1baa4d00800000000000000
+      internalID: 957766017684447589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging LAMP final_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad96e55717e929130800000000000000
+      internalID: 3572091664595839450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging LAMP final_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a9d2ca43262c060800000000000000
+      internalID: 6972243151489440275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging LAMP final_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6fcd310e4766c90800000000000000
+      internalID: -7176920450413562180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swinging LAMP final_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0524e1f266eec210800000000000000
+      internalID: 1355273850524542218
       vertices: []
       indices: 
       edges: []
@@ -277,7 +314,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c998f2e5d565ef247a4698a82c9ddc2e
+    spriteID: 6fff1aa91216a664e995ebe1e1f4bd39
     internalID: 0
     vertices: []
     indices: 
@@ -287,11 +324,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      torch sprite sheet_0: -7344175433272962699
-      torch sprite sheet_1: 7996655174066873397
-      torch sprite sheet_2: -8343915251053635116
-      torch sprite sheet_3: 8421193770517065185
-      torch sprite sheet_4: -8679539120980999065
+      swinging LAMP final_0: 2688077028254164717
+      swinging LAMP final_1: -1828311583231864221
+      swinging LAMP final_2: 957766017684447589
+      swinging LAMP final_3: 3572091664595839450
+      swinging LAMP final_4: 6972243151489440275
+      swinging LAMP final_5: -7176920450413562180
+      swinging LAMP final_6: 1355273850524542218
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: de566922b224f5b45b35583248e7a656
+guid: f74b915e107c4e143b32df774d3c3246
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7344175433272962699
-    second: torch sprite sheet_0
+      213: 6779068520525528235
+    second: grass 6_0
   - first:
-      213: 7996655174066873397
-    second: torch sprite sheet_1
+      213: 2590917267135579776
+    second: grass 6_1
   - first:
-      213: -8343915251053635116
-    second: torch sprite sheet_2
+      213: 315482094234221281
+    second: grass 6_2
   - first:
-      213: 8421193770517065185
-    second: torch sprite sheet_3
+      213: 6912961450143045882
+    second: grass 6_3
   - first:
-      213: -8679539120980999065
-    second: torch sprite sheet_4
+      213: 2661521358018471783
+    second: grass 6_4
+  - first:
+      213: -8044315492836145737
+    second: grass 6_5
+  - first:
+      213: -3441109545462653406
+    second: grass 6_6
+  - first:
+      213: -4245582400146435412
+    second: grass 6_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +131,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -135,24 +144,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,7 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: torch sprite sheet_0
+      name: grass 6_0
       rect:
         serializedVersion: 2
         x: 0
@@ -179,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5715d93ca5f341a90800000000000000
-      internalID: -7344175433272962699
+      spriteID: bacf4f107e6141e50800000000000000
+      internalID: 6779068520525528235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_1
+      name: grass 6_1
       rect:
         serializedVersion: 2
         x: 16
@@ -201,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 534ab814383d9fe60800000000000000
-      internalID: 7996655174066873397
+      spriteID: 086ca06f689c4f320800000000000000
+      internalID: 2590917267135579776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_2
+      name: grass 6_2
       rect:
         serializedVersion: 2
         x: 32
@@ -223,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d9dbf08945743c80800000000000000
-      internalID: -8343915251053635116
+      spriteID: 1eab3df0b41d06400800000000000000
+      internalID: 315482094234221281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_3
+      name: grass 6_3
       rect:
         serializedVersion: 2
         x: 48
@@ -245,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ede66ced171ed470800000000000000
-      internalID: 8421193770517065185
+      spriteID: af8debdffc5cfef50800000000000000
+      internalID: 6912961450143045882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_4
+      name: grass 6_4
       rect:
         serializedVersion: 2
         x: 64
@@ -267,8 +263,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76442d7d7251c8780800000000000000
-      internalID: -8679539120980999065
+      spriteID: 7676ec2e29f9fe420800000000000000
+      internalID: 2661521358018471783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass 6_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b5845c0ea9dc5090800000000000000
+      internalID: -8044315492836145737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass 6_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e1e75a919be30d0800000000000000
+      internalID: -3441109545462653406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass 6_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca21f961d49a415c0800000000000000
+      internalID: -4245582400146435412
       vertices: []
       indices: 
       edges: []
@@ -277,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c998f2e5d565ef247a4698a82c9ddc2e
+    spriteID: 47fc7005b66435d4f95e2e3cb7eab6dc
     internalID: 0
     vertices: []
     indices: 
@@ -287,11 +349,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      torch sprite sheet_0: -7344175433272962699
-      torch sprite sheet_1: 7996655174066873397
-      torch sprite sheet_2: -8343915251053635116
-      torch sprite sheet_3: 8421193770517065185
-      torch sprite sheet_4: -8679539120980999065
+      grass 6_0: 6779068520525528235
+      grass 6_1: 2590917267135579776
+      grass 6_2: 315482094234221281
+      grass 6_3: 6912961450143045882
+      grass 6_4: 2661521358018471783
+      grass 6_5: -8044315492836145737
+      grass 6_6: -3441109545462653406
+      grass 6_7: -4245582400146435412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: de566922b224f5b45b35583248e7a656
+guid: 82ff0b4873454e4408346354d41c7869
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7344175433272962699
-    second: torch sprite sheet_0
+      213: -1026557847171142391
+    second: falling leaf sprite sheet_0
   - first:
-      213: 7996655174066873397
-    second: torch sprite sheet_1
+      213: 3544904117613897109
+    second: falling leaf sprite sheet_1
   - first:
-      213: -8343915251053635116
-    second: torch sprite sheet_2
+      213: 8734538577173452613
+    second: falling leaf sprite sheet_2
   - first:
-      213: 8421193770517065185
-    second: torch sprite sheet_3
+      213: 7886043510618025654
+    second: falling leaf sprite sheet_3
   - first:
-      213: -8679539120980999065
-    second: torch sprite sheet_4
+      213: -5447373857913969236
+    second: falling leaf sprite sheet_4
+  - first:
+      213: -3698556345310625133
+    second: falling leaf sprite sheet_5
+  - first:
+      213: 2736129585535396942
+    second: falling leaf sprite sheet_6
+  - first:
+      213: -512409065915813842
+    second: falling leaf sprite sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +131,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -135,24 +144,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,13 +160,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: torch sprite sheet_0
+      name: falling leaf sprite sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,42 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5715d93ca5f341a90800000000000000
-      internalID: -7344175433272962699
+      spriteID: 90d69f1b31fe0c1f0800000000000000
+      internalID: -1026557847171142391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 534ab814383d9fe60800000000000000
-      internalID: 7996655174066873397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torch sprite sheet_2
+      name: falling leaf sprite sheet_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,42 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d9dbf08945743c80800000000000000
-      internalID: -8343915251053635116
+      spriteID: 59522356387023130800000000000000
+      internalID: 3544904117613897109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: torch sprite sheet_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ede66ced171ed470800000000000000
-      internalID: 8421193770517065185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: torch sprite sheet_4
+      name: falling leaf sprite sheet_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,8 +219,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76442d7d7251c8780800000000000000
-      internalID: -8679539120980999065
+      spriteID: 5479e51fe80573970800000000000000
+      internalID: 8734538577173452613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falling leaf sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be69a57acad07d60800000000000000
+      internalID: 7886043510618025654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falling leaf sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5e940765a0764b0800000000000000
+      internalID: -5447373857913969236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falling leaf sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3924ef789961cacc0800000000000000
+      internalID: -3698556345310625133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falling leaf sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c26458c5fa8f520800000000000000
+      internalID: 2736129585535396942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: falling leaf sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20f56e5bae83e8f0800000000000000
+      internalID: -512409065915813842
       vertices: []
       indices: 
       edges: []
@@ -277,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c998f2e5d565ef247a4698a82c9ddc2e
+    spriteID: 84021c07e35471f43995902587ecdd6d
     internalID: 0
     vertices: []
     indices: 
@@ -287,11 +349,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      torch sprite sheet_0: -7344175433272962699
-      torch sprite sheet_1: 7996655174066873397
-      torch sprite sheet_2: -8343915251053635116
-      torch sprite sheet_3: 8421193770517065185
-      torch sprite sheet_4: -8679539120980999065
+      falling leaf sprite sheet_0: -1026557847171142391
+      falling leaf sprite sheet_1: 3544904117613897109
+      falling leaf sprite sheet_2: 8734538577173452613
+      falling leaf sprite sheet_3: 7886043510618025654
+      falling leaf sprite sheet_4: -5447373857913969236
+      falling leaf sprite sheet_5: -3698556345310625133
+      falling leaf sprite sheet_6: 2736129585535396942
+      falling leaf sprite sheet_7: -512409065915813842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
