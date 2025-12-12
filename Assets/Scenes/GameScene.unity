@@ -689,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &110654882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5476,7 +5476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.1
-  m_Text: replenishes a health point after you have dodged 2 enemies.
+  m_Text: Replenishes a health point after you have dodged 2 enemies.
 --- !u!222 &1562631434
 CanvasRenderer:
   m_ObjectHideFlags: 0
