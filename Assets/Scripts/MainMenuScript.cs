@@ -5,6 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject mainMenuUI;
     public GameObject creditsUI;
+    public GameObject controlsUI;           
 
     [SerializeField] private AudioClip clickSoundClip;
 
@@ -33,5 +34,13 @@ public class MainMenu : MonoBehaviour
         SoundFXManager.instance.PlaySoundFXClip(clickSoundClip, transform, 0.1f);
         creditsUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        controlsUI.SetActive(false);
+    }
+
+    public void ShowControls()
+    {
+        SoundFXManager.instance.PlaySoundFXClip(clickSoundClip, transform, 0.1f);
+        mainMenuUI.SetActive(false);
+        controlsUI.SetActive(true);
     }
 }
